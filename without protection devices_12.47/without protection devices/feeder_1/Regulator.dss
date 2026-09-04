@@ -1,0 +1,15 @@
+
+/* ########################################### FEEDER 3 ######################################################################## */
+/* reference: PNNL 9500 Node system */ 
+
+! Define three banks of single-phase regulators; each phase is controlled separately
+! The regulating transformer is defined as a low-impedance, low-loss 2-winding, 1:1, Y-Y transformer to approximate an ideal regulator
+! The control regulates winding 2
+
+New Transformer.VREG_fdr1_A  phases=1  windings=2  buses=(fdr1.1, fdr1_0.1)  conns=(wye, wye)  kvs=(7.2, 7.2)  kvas=(1000, 1000)  xhl=0.01 %loadloss=.001 Wdg=2 Maxtap=1.1 Mintap=0.9 ppm=0 
+New Transformer.VREG_fdr1_B  phases=1  windings=2  buses=(fdr1.2, fdr1_0.2)  conns=(wye, wye)  kvs=(7.2, 7.2)  kvas=(1000, 1000)  xhl=0.01 %loadloss=.001 Wdg=2 Maxtap=1.1 Mintap=0.9 ppm=0 
+New Transformer.VREG_fdr1_C  phases=1  windings=2  buses=(fdr1.3, fdr1_0.3)  conns=(wye, wye)  kvs=(7.2, 7.2)  kvas=(1000, 1000)  xhl=0.01 %loadloss=.001 Wdg=2 Maxtap=1.1 Mintap=0.9 ppm=0 
+
+New RegControl.VREG_fdr1_A  transformer=VREG_fdr1_A  winding=2 vreg=122  ptratio=60 band=3  reversible=yes revvreg=122 revband=3 revThreshold=50
+New RegControl.VREG_fdr1_B  transformer=VREG_fdr1_B  winding=2 vreg=122  ptratio=60 band=3  reversible=yes revvreg=122 revband=3 revThreshold=50
+New RegControl.VREG_fdr1_C  transformer=VREG_fdr1_C  winding=2 vreg=122  ptratio=60 band=3  reversible=yes revvreg=122 revband=3 revThreshold=50
