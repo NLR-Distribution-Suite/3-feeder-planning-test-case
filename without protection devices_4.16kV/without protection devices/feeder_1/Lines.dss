@@ -1,0 +1,79 @@
+! 3-phase primary lines
+new line.fdr1_1_sw-fdr1_1       bus1=fdr1_1_sw      bus2=fdr1_1         linecode=OH-3X_1/0AAAC_1/0AAACN      length=0.4  units=km 
+new line.fdr1_1-fdr1_2          bus1=fdr1_1         bus2=fdr1_2         linecode=OH-3X_1/0AAAC_1/0AAACN      length=0.4  units=km
+new line.fdr1_2-fdr1_3          bus1=fdr1_2         bus2=fdr1_3         linecode=OH-3X_1/0AAAC_1/0AAACN      length=0.4  units=km 
+new line.fdr1_3-fdr1_3_sw       bus1=fdr1_3         bus2=fdr1_3_sw      linecode=OH-3X_1/0AAAC_1/0AAACN      length=0.4  units=km 
+new line.fdr1_7_sw-fdr1_7       bus1=fdr1_7_sw      bus2=fdr1_7         linecode=OH-3X_1/0AAAC_1/0AAACN      length=0.4  units=km 
+new line.fdr1_7-fdr1_8          bus1=fdr1_7         bus2=fdr1_8         linecode=OH-3X_1/0AAAC_1/0AAACN      length=0.4  units=km 
+new line.fdr1_8-fdr1_9          bus1=fdr1_8         bus2=fdr1_9         linecode=OH-3X_1/0AAAC_1/0AAACN      length=0.4  units=km 
+new line.fdr1_10-fdr1_11        bus1=fdr1_10        bus2=fdr1_11        linecode=OH-3X_1/0AAAC_1/0AAACN      length=0.4  units=km 
+new line.fdr1_13_sw-fdr1_13     bus1=fdr1_13_sw     bus2=fdr1_13        linecode=OH-3X_1/0AAAC_1/0AAACN      length=0.4  units=km 
+new line.fdr1_13-fdr1_14        bus1=fdr1_13        bus2=fdr1_14        linecode=OH-3X_1/0AAAC_1/0AAACN      length=0.4  units=km 
+new line.fdr1_15_sw-fdr1_15     bus1=fdr1_15_sw     bus2=fdr1_15        linecode=OH-3X_1/0AAAC_1/0AAACN      length=0.4  units=km 
+new line.fdr1_15-fdr1_19        bus1=fdr1_15        bus2=fdr1_19        linecode=OH-3X_1/0AAAC_1/0AAACN      length=0.4  units=km 
+
+! 3-phase secondary lines
+! tr1, tr2, tr3
+new line.fdr1_1_sec-fdr1_1_load bus1=fdr1_1_sec     bus2=fdr1_1_load    linecode=400amps    length=0.02 units=km 
+new line.fdr1_2_sec-fdr1_2_load bus1=fdr1_2_sec     bus2=fdr1_2_load    linecode=156amps    length=0.02 units=km 
+new line.fdr1_3_sec-fdr1_3_load bus1=fdr1_3_sec     bus2=fdr1_3_load    linecode=156amps    length=0.02 units=km 
+
+! lines with a tie-switch connection
+new line.fdr1_11-fdr1_11_sw     bus1=fdr1_11        bus2=fdr1_11_sw     linecode=OH-3X_1/0AAAC_1/0AAACN     length=0.2  units=km 
+new line.fdr1_4-fdr1_4_sw       bus1=fdr1_4         bus2=fdr1_4_sw      linecode=OH-3X_1/0AAAC_1/0AAACN     length=0.1  units=km 
+
+! very long extension of the 3-phase primary line
+new line.fdr1_11-fdr1_12        bus1=fdr1_11        bus2=fdr1_12        linecode=OH-3X_1/0AAAC_1/0AAACN      length=3.0  units=km 
+
+! single or two phase primary lines
+new line.fdr1_4-fdr1_5          bus1=fdr1_4.2.3     bus2=fdr1_5.2.3     linecode=OH-2X_4CU_4CUN     length=0.4  units=km 
+new line.fdr1_5-fdr1_6          bus1=fdr1_5.2       bus2=fdr1_6.2       linecode=OH-1X_4CU_4CUN     length=0.4  units=km 
+new line.fdr1_8-1-fdr1_8-2      bus1=fdr1_8-1.2.3   bus2=fdr1_8-2.2.3   linecode=OH-2X_4CU_4CUN     length=0.4  units=km 
+new line.fdr1_8-2-fdr1_8-3      bus1=fdr1_8-2.3     bus2=fdr1_8-3.3     linecode=OH-2X_4CU_4CUN     length=0.4  units=km
+new line.fdr1_15-fdr1_16        bus1=fdr1_15.2      bus2=fdr1_16.2      linecode=OH-1X_4CU_4CUN     length=0.4  units=km 
+new line.fdr1_16-fdr1_17        bus1=fdr1_16.2      bus2=fdr1_17.2      linecode=OH-1X_4CU_4CUN     length=0.4  units=km 
+new line.fdr1_17-fdr1_18        bus1=fdr1_17.2      bus2=fdr1_18.2      linecode=OH-1X_4CU_4CUN     length=0.4  units=km 
+new line.fdr1_19-fdr1_20        bus1=fdr1_19.2.3    bus2=fdr1_20.2.3    linecode=OH-2X_4CU_4CUN     length=0.4  units=km 
+new line.fdr1_20-fdr1_21        bus1=fdr1_20.3      bus2=fdr1_21.3      linecode=OH-1X_4CU_4CUN     length=0.4  units=km 
+new line.fdr1_21-fdr1_22        bus1=fdr1_21.3      bus2=fdr1_22.3      linecode=OH-1X_4CU_4CUN     length=0.4  units=km 
+
+
+! secondary distribution Triplex 
+! tr4
+new line.fdr1_4A-fdr1_4-1_load          bus1=fdr1_4A.1.2        bus2=fdr1_4-1_load.1.2  linecode=4/0Triplex length=0.02 units=km 
+new line.fdr1_4-1_load-fdr1_4-2_load    bus1=fdr1_4-1_load.1.2  bus2=fdr1_4-2_load.1.2  linecode=4/0Triplex length=0.08 units=km 
+!tr5 and tr7
+new line.fdr1_6B-1-fdr1_6_load1         bus1=fdr1_6B-1.1.2      bus2=fdr1_6_load1.1.2   linecode=4/0Triplex length=0.02 units=km 
+new line.fdr1_6B-2-fdr1_6_load2         bus1=fdr1_6B-2.1.2      bus2=fdr1_6_load2.1.2   linecode=4/0Triplex length=0.02 units=km 
+!tr6
+new line.fdr1_5C-fdr1_5_load            bus1=fdr1_5C.1.2        bus2=fdr1_5_load.1.2    linecode=4/0Triplex length=0.02 units=km 
+!tr8, tr9, tr10
+new line.fdr1_8-1A-fdr1_8-1_load        bus1=fdr1_8-1A.1.2      bus2=fdr1_8-1_load.1.2  linecode=4/0Triplex length=0.02 units=km 
+new line.fdr1_8-2B-fdr1_8-2_load        bus1=fdr1_8-2B.1.2      bus2=fdr1_8-2_load.1.2  linecode=4/0Triplex length=0.02 units=km 
+new line.fdr1_8-3C-fdr1_8-3_load        bus1=fdr1_8-3C.1.2      bus2=fdr1_8-3_load.1.2  linecode=4/0Triplex length=0.02 units=km 
+!tr11
+new line.fdr1_11B-fdr1_11-1_load        bus1=fdr1_11B.1.2       bus2=fdr1_11-1_load.1.2 linecode=4/0Triplex length=0.02 units=km 
+new line.fdr1_11-1_load-fdr1_11-2_load  bus1=fdr1_11-1_load.1.2 bus2=fdr1_11-2_load.1.2 linecode=4/0Triplex length=0.02 units=km 
+new line.fdr1_11B-fdr1_11-3_load        bus1=fdr1_11B.1.2       bus2=fdr1_11-3_load.1.2 linecode=4/0Triplex length=0.02 units=km 
+new line.fdr1_11-3_load-fdr1_11-4_load  bus1=fdr1_11-3_load.1.2 bus2=fdr1_11-4_load.1.2 linecode=4/0Triplex length=0.02 units=km 
+!tr12
+new line.fdr1_13A-fdr1_13_load          bus1=fdr1_13A.1.2       bus2=fdr1_13_load.1.2   linecode=4/0Triplex length=0.02 units=km 
+!tr13
+new line.fdr1_14C-fdr1_14-1_load        bus1=fdr1_14C.1.2       bus2=fdr1_14-1_load.1.2 linecode=4/0Triplex length=0.02 units=km 
+new line.fdr1_14-1_load-fdr1_14-2_load  bus1=fdr1_14-1_load.1.2 bus2=fdr1_14-2_load.1.2 linecode=4/0Triplex length=0.02 units=km 
+!tr14
+new line.fdr1_19A-fdr1_19_load          bus1=fdr1_19A.1.2       bus2=fdr1_19_load.1.2   linecode=4/0Triplex length=0.02 units=km 
+!tr15
+new line.fdr1_20B-fdr1_20_load          bus1=fdr1_20B.1.2       bus2=fdr1_20_load.1.2   linecode=4/0Triplex length=0.02 units=km 
+!tr16
+new line.fdr1_21C-fdr1_21_load          bus1=fdr1_21C.1.2       bus2=fdr1_21_load.1.2   linecode=4/0Triplex length=0.02 units=km 
+!tr17
+new line.fdr1_22C-fdr1_22_load          bus1=fdr1_22C.1.2       bus2=fdr1_22_load.1.2   linecode=4/0Triplex length=0.02 units=km 
+!tr18
+new line.fdr1_17B-fdr1_17_load          bus1=fdr1_17B.1.2       bus2=fdr1_17_load.1.2   linecode=4/0Triplex length=0.02 units=km 
+!tr19
+new line.fdr1_18B-fdr1_18_load          bus1=fdr1_18B.1.2       bus2=fdr1_18_load.1.2   linecode=4/0Triplex length=0.02 units=km 
+!tr20
+new line.fdr1_9A-fdr1_9-1_load          bus1=fdr1_9A.1.2        bus2=fdr1_9-1_load.1.2  linecode=4/0Triplex length=0.02 units=km 
+new line.fdr1_9B-fdr1_9-2_load          bus1=fdr1_9B.1.2        bus2=fdr1_9-2_load.1.2  linecode=4/0Triplex length=0.02 units=km 
+new line.fdr1_9C-fdr1_9-3_load          bus1=fdr1_9C.1.2        bus2=fdr1_9-3_load.1.2  linecode=4/0Triplex length=0.02 units=km 

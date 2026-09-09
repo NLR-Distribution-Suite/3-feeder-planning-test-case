@@ -1,0 +1,34 @@
+/* ########################################### FEEDER 3 ######################################################################## */
+! three-phase loads
+New Load.fdr3_1_load    Bus1=fdr3_1_load     phases=3 kv=0.48   kW=230  pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_2_load    Bus1=fdr3_2_load     phases=3 kv=0.48   kW=84   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_3_load    Bus1=fdr3_3_load     phases=3 kv=0.48   kW=93   pf=0.97 Vminpu = 0.9 conn=wye
+
+
+! single-phase loads
+New Load.fdr3_4-1_load    Bus1=fdr3_4-1_load.1.2    phases=2 kv=0.208  kW=18   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_4-2_load    Bus1=fdr3_4-2_load.1.2    phases=2 kv=0.208  kW=12   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_5_load      Bus1=fdr3_5_load.1.2      phases=2 kv=0.208  kW=15   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_6_load1     Bus1=fdr3_6_load1.1.2     phases=2 kv=0.208  kW=18   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_6_load2     Bus1=fdr3_6_load2.1.2     phases=2 kv=0.208  kW=22   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_8-1_load    Bus1=fdr3_8-1_load.1.2    phases=2 kv=0.208  kW=23   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_8-2_load    Bus1=fdr3_8-2_load.1.2    phases=2 kv=0.208  kW=20   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_8-3_load    Bus1=fdr3_8-3_load.1.2    phases=2 kv=0.208  kW=18   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_11-1_load   Bus1=fdr3_11-1_load.1.2   phases=2 kv=0.208  kW=12   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_11-2_load   Bus1=fdr3_11-2_load.1.2   phases=2 kv=0.208  kW=12   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_11-3_load   Bus1=fdr3_11-3_load.1.2   phases=2 kv=0.208  kW=8    pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_11-4_load   Bus1=fdr3_11-4_load.1.2   phases=2 kv=0.208  kW=10   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_13_load     Bus1=fdr3_13_load.1.2     phases=2 kv=0.208  kW=8    pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_14-1_load   Bus1=fdr3_14-1_load.1.2   phases=2 kv=0.208  kW=10   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_14-2_load   Bus1=fdr3_14-2_load.1.2   phases=2 kv=0.208  kW=10   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_17_load     Bus1=fdr3_17_load.1.2     phases=2 kv=0.208  kW=9    pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_18_load     Bus1=fdr3_18_load.1.2     phases=2 kv=0.208  kW=12   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_19_load     Bus1=fdr3_19_load.1.2     phases=2 kv=0.208  kW=20   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_20_load     Bus1=fdr3_20_load.1.2     phases=2 kv=0.208  kW=12   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_21_load     Bus1=fdr3_21_load.1.2     phases=2 kv=0.208  kW=10   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_22_load     Bus1=fdr3_22_load.1.2     phases=2 kv=0.208  kW=8    pf=0.97 Vminpu = 0.9 conn=wye
+
+! three single-phase loads at the secondary of 3x1-ph transformer
+New Load.fdr3_9-1_load  Bus1=fdr3_9-1_load.1.2   phases=2 kv=0.208  kW=25   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_9-2_load  Bus1=fdr3_9-2_load.1.2   phases=2 kv=0.208  kW=20   pf=0.97 Vminpu = 0.9 conn=wye
+New Load.fdr3_9-3_load  Bus1=fdr3_9-3_load.1.2   phases=2 kv=0.208  kW=23   pf=0.97 Vminpu = 0.9 conn=wye

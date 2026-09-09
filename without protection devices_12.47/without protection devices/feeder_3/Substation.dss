@@ -1,0 +1,12 @@
+New Circuit.cadet-testcase-feeder3 bus1=source pu=1.02 basekv=132 r1=1e-05 x1=1e-5 r0=1e-05 x0=1e-05
+
+/* ########################################### LINECODES  FOR SWITCHES ###################################################################### */
+New Linecode.switch nphases=3
+~ rmatrix=[1e-05 0.0 0.0 | 0.0 1e-05 0.0 | 0.0 0.0 1e-05] 
+~ xmatrix=[1e-05 0.0 0.0 | 0.0 1e-05 0.0 | 0.0 0.0 1e-05]
+~ units=kft
+
+! substation: We assume the connector is where the feeders get connected and this is the substation switch
+New Line.source_connector bus1=source bus2=connector linecode=switch length=1e-05 
+
+New Transformer.sub_feeder3 phases=3 windings=2 xhl=5 %loadloss=0.002 %noloadloss=0.002 buses=[connector fdr3] conns=[delta wye] kvs=[132 12.47] kvas=[2000 2000] %rs=[0.01 0.01]

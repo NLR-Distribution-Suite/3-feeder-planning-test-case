@@ -1,0 +1,35 @@
+/* ############################# cadet-testcase #####################################*/
+/* Developed By: Abodh Poudyal and Bryan Palmintier*/
+/* Grid Planning and Analysis Center*/
+/* National Renewable Energy Laboratory*/
+
+clear
+
+Redirect Substation.dss
+Redirect LineCode.dss
+Redirect Regulator.dss
+Redirect NormallyClosedSwitches.dss
+Redirect NormallyOpenSwitches.dss
+Redirect Lines.dss
+Redirect Transformers.dss
+Redirect Loads.dss
+
+
+! set normal feeder configuration
+open line.fdr1_4_fdr1_11
+
+! define simulation parameters
+Set DefaultBaseFreq=60
+Set VoltageBases=[34.5, 12.47, 4.16, 0.480, 0.208]
+Calcv
+
+! Buscoordinates
+Buscoords BusCoords.dss
+
+new energymeter.meter1 element=line.source_connector
+
+Set MaxControlIter=30
+Set earthmodel=Carson
+
+! solve the system
+solve
