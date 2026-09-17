@@ -1,23 +1,36 @@
 /* ########################################### FEEDER 3 ######################################################################## */
 
-! Three-phase transformers
-new Transformer.fdr3_tr1 phases=3 windings=2 buses=[fdr3_1 fdr3_1_sec] conns=[wye wye] kvs=[12.47 0.48] kvas=[250 250] %rs=[0.872 0.872] x12=7.9 %loadloss=0.01 %noloadloss=0.001
-new Transformer.fdr3_tr2 phases=3 windings=2 buses=[fdr3_2 fdr3_2_sec] conns=[wye wye] kvs=[12.47 0.48] kvas=[100 100] %rs=[0.872 0.872] x12=7.9 %loadloss=0.01 %noloadloss=0.001
-new Transformer.fdr3_tr3 phases=3 windings=2 buses=[fdr3_3 fdr3_3_sec] conns=[wye wye] kvs=[12.47 0.48] kvas=[100 100] %rs=[0.872 0.872] x12=7.9 %loadloss=0.01 %noloadloss=0.001
+// Three-phase 2-winding transformers
+new Transformer.fdr3_tr1 phases=3 windings=2
+~ buses=[fdr3_1.1.2.3 fdr3_1_sec.1.2.3]
+~ conns=[wye wye] 
+~ kvs=[12.47 0.48] 
+~ kvas=[250 250] 
+~ xhl=4 %loadloss=1.5 %noloadloss=0.25
 
-! Split-phase transformers
-! reference: PNNL 9500 node system
-New XfmrCode.CT5    phases=1 windings=3 kvs=[7.2 0.12 0.12] kVAs=[  5.0   5.0   5.0] %imag=0.5 %Rs=[0.6 1.2 1.2] %noloadloss=.2 Xhl=2.04  Xht=2.04  Xlt=1.36
-New XfmrCode.CT10   phases=1 windings=3 kvs=[7.2 0.12 0.12] kVAs=[ 10.0  10.0  10.0] %imag=0.5 %Rs=[0.6 1.2 1.2] %noloadloss=.2 Xhl=2.04  Xht=2.04  Xlt=1.36
-New XfmrCode.CT15   phases=1 windings=3 kvs=[7.2 0.12 0.12] kVAs=[ 15.0  15.0  15.0] %imag=0.5 %Rs=[0.6 1.2 1.2] %noloadloss=.2 Xhl=2.04  Xht=2.04  Xlt=1.36
-New XfmrCode.CT25   phases=1 windings=3 kvs=[7.2 0.12 0.12] kVAs=[ 25.0  25.0  25.0] %imag=0.5 %Rs=[0.6 1.2 1.2] %noloadloss=.2 Xhl=2.04  Xht=2.04  Xlt=1.36
-New XfmrCode.CT33   phases=1 windings=3 kvs=[7.2 0.12 0.12] kVAs=[ 33.0  33.0  33.0] %imag=0.5 %Rs=[0.6 1.2 1.2] %noloadloss=.2 Xhl=2.04  Xht=2.04  Xlt=1.36
-New XfmrCode.CT33-1 phases=1 windings=3 kvs=[7.2 0.12 0.12] kVAs=[ 33.5  33.5  33.5] %imag=0.5 %Rs=[0.6 1.2 1.2] %noloadloss=.2 Xhl=2.04  Xht=2.04  Xlt=1.36
-New XfmrCode.CT50   phases=1 windings=3 kvs=[7.2 0.12 0.12] kVAs=[ 50.0  50.0  50.0] %imag=0.5 %Rs=[0.6 1.2 1.2] %noloadloss=.2 Xhl=2.04  Xht=2.04  Xlt=1.36
-New XfmrCode.CT75   phases=1 windings=3 kvs=[7.2 0.12 0.12] kVAs=[ 75.0  75.0  75.0] %imag=0.5 %Rs=[0.6 1.2 1.2] %noloadloss=.2 Xhl=2.04  Xht=2.04  Xlt=1.36
-New XfmrCode.CT100  phases=1 windings=3 kvs=[7.2 0.12 0.12] kVAs=[100.0 100.0 100.0] %imag=0.5 %Rs=[0.6 1.2 1.2] %noloadloss=.2 Xhl=2.04  Xht=2.04  Xlt=1.36
-New XfmrCode.CT250  phases=1 windings=3 kvs=[7.2 0.12 0.12] kVAs=[250.0 250.0 250.0] %imag=0.5 %Rs=[0.6 1.2 1.2] %noloadloss=.2 Xhl=2.04  Xht=2.04  Xlt=1.36
+new Transformer.fdr3_tr2 phases=3 windings=2 
+~ buses=[fdr3_2.1.2.3 fdr3_2_sec.1.2.3] 
+~ conns=[wye wye] 
+~ kvs=[12.47 0.48] 
+~ kvas=[100 100] 
+~ xhl=3.5 %loadloss=1.75 %noloadloss=0.30
 
+new Transformer.fdr3_tr3 phases=3 windings=2 
+~ buses=[fdr3_3.1.2.3 fdr3_3_sec.1.2.3] 
+~ conns=[wye wye] 
+~ kvs=[12.47 0.48] 
+~ kvas=[100 100] 
+~ xhl=3.5 %loadloss=1.75 %noloadloss=0.30
+
+new Transformer.fdr3_tr21 phases=3 windings=2 
+~ buses=[fdr3_23.1.2.3 fdr3_23_sec.1.2.3] 
+~ conns=[wye wye] 
+~ kvs=[12.47 0.48] 
+~ kvas=[100 100] 
+~ xhl=3.5 %loadloss=1.75 %noloadloss=0.30
+
+
+// center tapped secondary transformers
 new Transformer.fdr3_tr4    XfmrCode=CT33   buses=[fdr3_4.1     fdr3_4A.1.0    fdr3_4A.0.2]
 new Transformer.fdr3_tr5    XfmrCode=CT25   buses=[fdr3_6.2     fdr3_6B-1.1.0  fdr3_6B-1.0.2]
 new Transformer.fdr3_tr7    XfmrCode=CT25   buses=[fdr3_6.2     fdr3_6B-2.1.0  fdr3_6B-2.0.2]
@@ -26,14 +39,14 @@ new Transformer.fdr3_tr8    XfmrCode=CT25   buses=[fdr3_8-1.1   fdr3_8-1A.1.0  f
 new Transformer.fdr3_tr9    XfmrCode=CT25   buses=[fdr3_8-2.2   fdr3_8-2B.1.0  fdr3_8-2B.0.2]
 new Transformer.fdr3_tr10   XfmrCode=CT25   buses=[fdr3_8-3.3   fdr3_8-3C.1.0  fdr3_8-3C.0.2]
 new Transformer.fdr3_tr11   XfmrCode=CT50   buses=[fdr3_11.2    fdr3_11B.1.0   fdr3_11B.0.2]
-new Transformer.fdr3_tr20A  XfmrCode=CT33-1 buses=[fdr3_9.1     fdr3_9A.1.0    fdr3_9A.0.2]
-new Transformer.fdr3_tr20B  XfmrCode=CT33-1 buses=[fdr3_9.2     fdr3_9B.1.0    fdr3_9B.0.2]
-new Transformer.fdr3_tr20C  XfmrCode=CT33-1 buses=[fdr3_9.3     fdr3_9C.1.0    fdr3_9C.0.2]
-new Transformer.fdr3_tr12   XfmrCode=CT10   buses=[fdr3_13.1    fdr3_13A.1.0   fdr3_13A.0.2]
-new Transformer.fdr3_tr13   XfmrCode=CT25   buses=[fdr3_14.3    fdr3_14C.1.0   fdr3_14C.0.2]
-new Transformer.fdr3_tr14   XfmrCode=CT25   buses=[fdr3_19.1    fdr3_19A.1.0   fdr3_19A.0.2]
-new Transformer.fdr3_tr15   XfmrCode=CT15   buses=[fdr3_20.2    fdr3_20B.1.0   fdr3_20B.0.2]
-new Transformer.fdr3_tr16   XfmrCode=CT15   buses=[fdr3_21.3    fdr3_21C.1.0   fdr3_21C.0.2]
-new Transformer.fdr3_tr17   XfmrCode=CT10   buses=[fdr3_22.3    fdr3_22C.1.0   fdr3_22C.0.2]
-new Transformer.fdr3_tr18   XfmrCode=CT15   buses=[fdr3_17.2    fdr3_17B.1.0   fdr3_17B.0.2]
-new Transformer.fdr3_tr19   XfmrCode=CT15   buses=[fdr3_18.2    fdr3_18B.1.0   fdr3_18B.0.2]
+new Transformer.fdr3_tr12A  XfmrCode=CT33-1 buses=[fdr3_9.1     fdr3_9A.1.0    fdr3_9A.0.2]
+new Transformer.fdr3_tr12B  XfmrCode=CT33-1 buses=[fdr3_9.2     fdr3_9B.1.0    fdr3_9B.0.2]
+new Transformer.fdr3_tr12C  XfmrCode=CT33-1 buses=[fdr3_9.3     fdr3_9C.1.0    fdr3_9C.0.2]
+new Transformer.fdr3_tr13   XfmrCode=CT10   buses=[fdr3_13.1    fdr3_13A.1.0   fdr3_13A.0.2]
+new Transformer.fdr3_tr14   XfmrCode=CT25   buses=[fdr3_14.3    fdr3_14C.1.0   fdr3_14C.0.2]
+new Transformer.fdr3_tr15   XfmrCode=CT25   buses=[fdr3_16.1    fdr3_16A.1.0   fdr3_16A.0.2]
+new Transformer.fdr3_tr16   XfmrCode=CT15   buses=[fdr3_17.2    fdr3_17B.1.0   fdr3_17B.0.2]
+new Transformer.fdr3_tr17   XfmrCode=CT15   buses=[fdr3_18.3    fdr3_18C.1.0   fdr3_18C.0.2]
+new Transformer.fdr3_tr18   XfmrCode=CT10   buses=[fdr3_19.3    fdr3_19C.1.0   fdr3_19C.0.2]
+new Transformer.fdr3_tr19   XfmrCode=CT15   buses=[fdr3_21.1    fdr3_21A.1.0   fdr3_21A.0.2]
+new Transformer.fdr3_tr20   XfmrCode=CT15   buses=[fdr3_22.1    fdr3_22A.1.0   fdr3_22A.0.2]

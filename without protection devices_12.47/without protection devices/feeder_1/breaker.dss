@@ -1,0 +1,1 @@
+New Line.fdr1_feeder_head_breaker bus1=fdr1_bus_bar.1.2.3 bus2=fdr1_0.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_BRK switch=true Phases=3

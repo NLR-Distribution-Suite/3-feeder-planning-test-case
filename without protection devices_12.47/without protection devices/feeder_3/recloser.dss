@@ -1,0 +1,4 @@
+// Recloser but with Switch control
+// Will be updated when protection models are implemented
+New Line.fdr3_12_rec-fdr3_12 bus1=fdr3_12_rec.1.2.3 bus2=fdr3_12.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_REC switch=true Phases=3 
+New SwtControl.fdr3_12_rec-fdr3_12_control SwitchedObj=Line.fdr3_12_rec-fdr3_12 SwitchedTerm=1 Normal=Closed State=Closed

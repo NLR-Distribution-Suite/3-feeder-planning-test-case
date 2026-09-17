@@ -1,3 +1,7 @@
+/* ########################################### LINECODES  FOR SWITCHES ###################################################################### */
+New Linecode.switch R1=1e-5 X1=1e-5 R0=1e-5 X0=1e-5 units=kft nphases=3
+
+
 /* ########################################### LINECODES  FOR CONDUCTORS ###################################################################### */
 /* Linecodes based on a reference from OpenDSS Examples: https://sourceforge.net/p/electricdss/code/HEAD/tree/trunk/Distrib/Examples/Scripts/Triplex_Linecodes.txt#l50 */
 ! These are mostly service lines

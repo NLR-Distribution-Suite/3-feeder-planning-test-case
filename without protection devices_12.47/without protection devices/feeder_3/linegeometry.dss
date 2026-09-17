@@ -1,0 +1,37 @@
+// OH main line 3-ph
+New LineGeometry.OH_6_ACSR_3P nconds=4 nphases=3 reduce=y
+~ cond=1 wire=#6_ACSR_6/1 x=-3.67 h=31 units=ft
+~ cond=2 wire=#6_ACSR_6/1 x=0 h=31 units=ft
+~ cond=3 wire=#6_ACSR_6/1 x=3.67 h=31 units=ft
+~ cond=4 wire=#6_AA_CLASS_A x=0 h=26 units=ft
+
+// OH main line 2-ph
+New LineGeometry.OH_6_ACSR_2P nconds=3 nphases=2 reduce=y
+~ cond=1 wire=#6_ACSR_6/1 x=-3.67 h=31 units=ft
+~ cond=2 wire=#6_ACSR_6/1 x=3.67 h=31 units=ft
+~ cond=3 wire=#6_AA_CLASS_A x=0 h=26 units=ft
+
+// OH main line 1-ph
+New LineGeometry.OH_6_ACSR_1P nconds=2 nphases=1 reduce=y
+~ cond=1 wire=#6_ACSR_6/1 x=-0.67 h=31 units=ft
+~ cond=2 wire=#6_AA_CLASS_A x=0 h=26 units=ft
+
+
+// secondary quadruplex
+New LineGeometry.quadruplex_OH_4_ACSR nconds=4 nphases=3 reduce=y
+~ cond=1 wire=#4_ACSR_7/1 x=-0.015 h=10.5 units=ft
+~ cond=2 wire=#4_ACSR_7/1 x=0 h=10 units=ft
+~ cond=3 wire=#4_ACSR_7/1 x=0.015 h=9.5 units=ft
+~ cond=4 wire=#4_AA_CLASS_A x=0 h=9 units=ft
+
+New LineGeometry.quadruplex_OH_4/0 nconds=4 nphases=3 reduce=y
+~ cond=1 wire=#4/0_ACSR_6/1 x=-0.015 h=10.5 units=ft
+~ cond=2 wire=#4/0_ACSR_6/1 x=0 h=10 units=ft
+~ cond=3 wire=#4/0_ACSR_6/1 x=0.015 h=9.5 units=ft
+~ cond=4 wire=#3/0_ACSR_6/1 x=0 h=9 units=ft
+
+// secondary triplex
+New LineGeometry.triplex_4_ACSR nconds=3 nphases=2 reduce=y
+~ cond=1 wire=#4_ACSR_7/1 x=-0.015 h=10.5 units=ft
+~ cond=2 wire=#4_ACSR_7/1 x=0 h=10 units=ft
+~ cond=3 wire=#4_ACSR_7/1 x=0.015 h=9 units=ft
