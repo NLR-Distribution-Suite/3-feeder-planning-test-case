@@ -1,4 +1,8 @@
 // Recloser but with Switch control
 // Will be updated when protection models are implemented
 New Line.fdr3_12_rec-fdr3_12 bus1=fdr3_12_rec.1.2.3 bus2=fdr3_12.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_REC switch=true Phases=3 
-New SwtControl.fdr3_12_rec-fdr3_12_control SwitchedObj=Line.fdr3_12_rec-fdr3_12 SwitchedTerm=1 Normal=Closed State=Closed
+New recloser.fdr3_12_rec-fdr3_12_recloser monitoredobj=Line.fdr3_12_rec-fdr3_12 monitoredterm=1
+~ phasefast=SC_short_time_inverse_speed_691-9-U5 phasedelayed=SC_very_inverse_speed_691-9-U3 
+~ groundfast=SC_short_time_inverse_speed_691-9-U5 grounddelayed=SC_very_inverse_speed_691-9-U3
+~ PhaseTrip=50 GroundTrip=80 PhaseInst=100
+~ enabled=Y

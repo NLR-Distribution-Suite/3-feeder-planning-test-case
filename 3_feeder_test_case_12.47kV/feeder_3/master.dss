@@ -6,11 +6,12 @@
 clear
 
 New Circuit.three_feeder_planning_ckt_feeder3
-Edit Vsource.source bus=fdr3_bus_bar.1.2.3 pu=1.04 basekv=12.47 r1=1e-05 x1=1e-5 r0=1e-05 x0=1e-05 
+Edit Vsource.source bus=fdr3_bus_bar.1.2.3 pu=1.025 basekv=12.47 r1=1e-05 x1=1e-5 r0=1e-05 x0=1e-05 
 
 Redirect linecode.dss
 Redirect wiredata.dss
 Redirect linegeometry.dss
+Redirect tcccurves.dss
 Redirect breaker.dss
 Redirect recloser.dss
 Redirect fuse.dss
@@ -33,4 +34,4 @@ Set MaxIter=100
 new energymeter.meter1 element=Line.fdr3_feeder_head_breaker 1
 
 // solve the system
-solve
+Solve
