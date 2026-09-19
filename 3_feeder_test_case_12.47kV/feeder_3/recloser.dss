@@ -5,4 +5,4 @@ New recloser.fdr3_12_rec-fdr3_12_recloser monitoredobj=Line.fdr3_12_rec-fdr3_12 
 ~ phasefast=SC_short_time_inverse_speed_691-9-U5 phasedelayed=SC_very_inverse_speed_691-9-U3 
 ~ groundfast=SC_short_time_inverse_speed_691-9-U5 grounddelayed=SC_very_inverse_speed_691-9-U3
 ~ PhaseTrip=50 GroundTrip=80 PhaseInst=100
-~ enabled=Y
+~ enabled=N

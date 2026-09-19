@@ -5,4 +5,4 @@ New Line.fdr3_feeder_head_breaker bus1=fdr3_bus_bar.1.2.3 bus2=fdr3_0.1.2.3 line
 New Relay.fdr3_feeder_head_breaker_relay MonitoredObj=Line.fdr3_feeder_head_breaker MonitoredTerm=1 Type=Current 
 ~ PhaseCurve=SC_very_inverse_speed_691-9-U3 GroundCurve=SC_very_inverse_speed_691-9-U3
 ~ PhaseTrip=100 GroundTrip=200 PhaseInst=300
-~ enabled=Y
+~ enabled=N
