@@ -1,0 +1,36 @@
+/* ############################# 3-feeder Planning test case #####################################*/
+/* Developed By: Abodh Poudyal and Bryan Palmintier*/
+/* Grid Planning and Analysis Center*/
+/* National Laboratory of the Rockies*/
+
+clear
+
+New Circuit.three_feeder_planning_ckt_feeder3
+Edit Vsource.source bus=fdr3_bus_bar.1.2.3 pu=1.04 basekv=12.47 r1=1e-05 x1=1e-5 r0=1e-05 x0=1e-05 
+
+Redirect linecode.dss
+Redirect wiredata.dss
+Redirect linegeometry.dss
+Redirect breaker.dss
+Redirect recloser.dss
+Redirect fuse.dss
+Redirect normallyclosedswitches.dss
+Redirect normallyopenswitches.dss
+Redirect lines.dss
+Redirect xfmrcode.dss
+Redirect transformers.dss
+Redirect loads.dss
+
+// define simulation parameters
+Set DefaultBaseFreq=60
+Set Earthmodel=Carson
+Set VoltageBases=[138, 12.47, 0.480, 0.208]
+Calcv
+Set MaxControlIter=100
+Set MaxIter=100
+
+// add energy meter at the substation head
+new energymeter.meter1 element=Line.fdr3_feeder_head_breaker 1
+
+// solve the system
+solve

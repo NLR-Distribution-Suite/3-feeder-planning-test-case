@@ -1,7 +1,7 @@
 /* ########################################### FEEDER 3 ######################################################################## */
 ! around the feeder trunk
 New Line.fdr3_0-fdr3_1_sw bus1=fdr3_0.1.2.3 bus2=fdr3_1_sw.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
-!New SwtControl.fdr3_0-fdr3_1_sw_control SwitchedObj=Line.fdr3_0-fdr3_1_sw SwitchedTerm=2 Normal=Closed State=Closed
+New SwtControl.fdr3_0-fdr3_1_sw_control SwitchedObj=Line.fdr3_0-fdr3_1_sw SwitchedTerm=2 Normal=Closed State=Closed
 
 New Line.fdr3_0-fdr3_7_sw bus1=fdr3_0.1.2.3.0 bus2=fdr3_7_sw.1.2.3.0 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
 New SwtControl.fdr3_0-fdr3_7_sw_control SwitchedObj=Line.fdr3_0-fdr3_7_sw SwitchedTerm=1 Normal=Closed State=Closed

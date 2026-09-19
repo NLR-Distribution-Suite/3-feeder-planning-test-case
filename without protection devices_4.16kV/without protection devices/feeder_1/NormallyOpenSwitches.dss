@@ -1,3 +1,0 @@
-/* ########################################### Tie switches ########################################################################*/
-! normally open switches
-new line.fdr1_4_fdr1_11 bus1=fdr1_4 bus2=fdr1_11 linecode=switch length=0.0001 switch=true units=km 

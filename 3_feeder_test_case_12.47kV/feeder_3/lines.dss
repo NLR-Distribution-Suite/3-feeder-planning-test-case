@@ -1,0 +1,80 @@
+// 3-phase primary lines
+new line.fdr3_1_sw-fdr3_1         bus1=fdr3_1_sw.1.2.3      bus2=fdr3_1.1.2.3         geometry=OH_6_ACSR_3P                 length=0.7  units=km 
+new line.fdr3_1-fdr3_2            bus1=fdr3_1.1.2.3         bus2=fdr3_2.1.2.3         geometry=OH_6_ACSR_3P                 length=0.7  units=km 
+new line.fdr3_2-fdr3_3            bus1=fdr3_2.1.2.3         bus2=fdr3_3.1.2.3         geometry=OH_6_ACSR_3P                 length=0.7  units=km 
+new line.fdr3_3-fdr3_3_sw         bus1=fdr3_3.1.2.3         bus2=fdr3_3_sw.1.2.3      geometry=OH_6_ACSR_3P                 length=0.7  units=km 
+new line.fdr3_7_sw-fdr3_7         bus1=fdr3_7_sw.1.2.3      bus2=fdr3_7.1.2.3         geometry=OH_6_ACSR_3P                 length=0.7  units=km 
+new line.fdr3_7-fdr3_8            bus1=fdr3_7.1.2.3         bus2=fdr3_8.1.2.3         geometry=OH_6_ACSR_3P                 length=0.7  units=km 
+new line.fdr3_8-fdr3_9            bus1=fdr3_8.1.2.3         bus2=fdr3_9.1.2.3         geometry=OH_6_ACSR_3P                 length=0.7  units=km 
+new line.fdr3_10-fdr3_11          bus1=fdr3_10.1.2.3        bus2=fdr3_11.1.2.3        geometry=OH_6_ACSR_3P                 length=0.7  units=km 
+new line.fdr3_13_sw-fdr3_13       bus1=fdr3_13_sw.1.2.3     bus2=fdr3_13.1.2.3        geometry=UG_2_acsr_full_neutral_3P    length=0.8  units=km 
+new line.fdr3_15_sw-fdr3_15       bus1=fdr3_15_sw.1.2.3     bus2=fdr3_15.1.2.3        geometry=UG_2_acsr_full_neutral_3P    length=0.8  units=km 
+new line.fdr3_15-fdr3_20          bus1=fdr3_15.1.2.3        bus2=fdr3_20.1.2.3        geometry=UG_2_acsr_full_neutral_3P    length=0.8  units=km 
+new line.fdr3_15-fdr3_16          bus1=fdr3_15.1.2.3        bus2=fdr3_16.1.2.3        geometry=UG_2_acsr_full_neutral_3P    length=0.8  units=km 
+new line.fdr3_20-fdr3_21          bus1=fdr3_20.1.2.3        bus2=fdr3_21.1.2.3        geometry=UG_2_acsr_full_neutral_3P    length=0.8  units=km 
+new line.fdr3_21-fdr3_22          bus1=fdr3_21.1.2.3        bus2=fdr3_22.1.2.3        geometry=UG_2_acsr_full_neutral_3P    length=0.8  units=km 
+new line.fdr3_22-fdr3_23          bus1=fdr3_22.1.2.3        bus2=fdr3_23.1.2.3        geometry=UG_2_acsr_full_neutral_3P    length=0.8  units=km 
+
+// 3-phase secondary lines
+// tr1, tr2, tr3, tr21
+new line.fdr3_1_sec-fdr3_1_load   bus1=fdr3_1_sec.1.2.3   bus2=fdr3_1_load.1.2.3    geometry=UG_quadruplex_4/0        length=0.01 units=km 
+new line.fdr3_2_sec-fdr3_2_load   bus1=fdr3_2_sec.1.2.3   bus2=fdr3_2_load.1.2.3    geometry=UG_quadruplex_4_ACSR     length=0.01 units=km 
+new line.fdr3_3_sec-fdr3_3_load   bus1=fdr3_3_sec.1.2.3   bus2=fdr3_3_load.1.2.3    geometry=UG_quadruplex_4_ACSR     length=0.01 units=km 
+new line.fdr3_23_sec-fdr3_23_load bus1=fdr3_23_sec.1.2.3  bus2=fdr3_23_load.1.2.3   geometry=UG_quadruplex_4_ACSR     length=0.01 units=km 
+
+// lines with a tie-switch connection
+new line.fdr3_11-fdr3_11_sw       bus1=fdr3_11.1.2.3        bus2=fdr3_11_sw.1.2.3     geometry=OH_6_ACSR_3P             length=0.4  units=km 
+new line.fdr3_4-fdr3_4_sw         bus1=fdr3_4.1.2.3         bus2=fdr3_4_sw.1.2.3      geometry=OH_6_ACSR_3P             length=0.4  units=km 
+
+// very long extension of the 3-phase primary line
+new line.fdr3_11-fdr3_12_rec      bus1=fdr3_11.1.2.3        bus2=fdr3_12_rec.1.2.3    geometry=OH_6_ACSR_3P             length=2.0  units=km 
+
+// single or two phase primary lines
+new line.fdr3_4-fdr3_5            bus1=fdr3_4.2.3           bus2=fdr3_5.2.3           geometry=UG_2_acsr_full_neutral_2P  length=0.2  units=km 
+new line.fdr3_5-fdr3_6            bus1=fdr3_5.2             bus2=fdr3_6.2             geometry=UG_2_acsr_full_neutral_1P  length=0.3  units=km 
+new line.fdr3_8-1-fdr3_8-2        bus1=fdr3_8-1.2.3         bus2=fdr3_8-2.2.3         geometry=UG_2_acsr_full_neutral_2P  length=0.2  units=km 
+new line.fdr3_8-2-fdr3_8-3        bus1=fdr3_8-2.3           bus2=fdr3_8-3.3           geometry=UG_2_acsr_full_neutral_1P  length=0.2  units=km 
+new line.fdr3_13-fdr3_14          bus1=fdr3_13.3            bus2=fdr3_14.3            geometry=UG_2_acsr_full_neutral_1P  length=0.3  units=km 
+new line.fdr3_16-fdr3_17          bus1=fdr3_16.2.3          bus2=fdr3_17.2.3          geometry=UG_2_acsr_full_neutral_2P  length=0.2  units=km 
+new line.fdr3_17-fdr3_18          bus1=fdr3_17.3            bus2=fdr3_18.3            geometry=UG_2_acsr_full_neutral_1P  length=0.2  units=km 
+new line.fdr3_18-fdr3_19          bus1=fdr3_18.3            bus2=fdr3_19.3            geometry=UG_2_acsr_full_neutral_1P  length=0.2  units=km 
+
+// secondary distribution Triplex 
+// tr4
+new line.fdr3_4A-fdr3_4-1_load          bus1=fdr3_4A.1.2        bus2=fdr3_4-1_load.1.2  geometry=UG_triplex_4_ACSR    length=0.01 units=km 
+new line.fdr3_4-1_load-fdr3_4-2_load    bus1=fdr3_4-1_load.1.2  bus2=fdr3_4-2_load.1.2  geometry=UG_triplex_4_ACSR    length=0.02 units=km 
+//tr5 and tr7
+new line.fdr3_6B-1-fdr3_6_load1         bus1=fdr3_6B-1.1.2      bus2=fdr3_6_load1.1.2   geometry=UG_triplex_4_ACSR    length=0.01 units=km
+new line.fdr3_6B-2-fdr3_6_load2         bus1=fdr3_6B-2.1.2      bus2=fdr3_6_load2.1.2   geometry=UG_triplex_4_ACSR    length=0.01 units=km  
+//tr6
+new line.fdr3_5C-fdr3_5_load            bus1=fdr3_5C.1.2        bus2=fdr3_5_load.1.2    geometry=UG_triplex_4_ACSR    length=0.01 units=km  
+//tr8, tr9, tr10
+new line.fdr3_8-1A-fdr3_8-1_load        bus1=fdr3_8-1A.1.2      bus2=fdr3_8-1_load.1.2  geometry=UG_triplex_4_ACSR    length=0.01 units=km  
+new line.fdr3_8-2B-fdr3_8-2_load        bus1=fdr3_8-2B.1.2      bus2=fdr3_8-2_load.1.2  geometry=UG_triplex_4_ACSR    length=0.01 units=km  
+new line.fdr3_8-3C-fdr3_8-3_load        bus1=fdr3_8-3C.1.2      bus2=fdr3_8-3_load.1.2  geometry=UG_triplex_4_ACSR    length=0.01 units=km  
+//tr11
+new line.fdr3_11B-fdr3_11-1_load        bus1=fdr3_11B.1.2       bus2=fdr3_11-1_load.1.2 geometry=UG_triplex_4_ACSR    length=0.01 units=km  
+new line.fdr3_11-1_load-fdr3_11-2_load  bus1=fdr3_11-1_load.1.2 bus2=fdr3_11-2_load.1.2 geometry=UG_triplex_4_ACSR    length=0.02 units=km  
+new line.fdr3_11B-fdr3_11-3_load        bus1=fdr3_11B.1.2       bus2=fdr3_11-3_load.1.2 geometry=UG_triplex_4_ACSR    length=0.01 units=km  
+new line.fdr3_11-3_load-fdr3_11-4_load  bus1=fdr3_11-3_load.1.2 bus2=fdr3_11-4_load.1.2 geometry=UG_triplex_4_ACSR    length=0.02 units=km  
+//tr12
+new line.fdr3_9A-fdr3_9-1_load          bus1=fdr3_9A.1.2        bus2=fdr3_9-1_load.1.2  geometry=UG_triplex_4_ACSR       length=0.01 units=km  
+new line.fdr3_9B-fdr3_9-2_load          bus1=fdr3_9B.1.2        bus2=fdr3_9-2_load.1.2  geometry=UG_triplex_4_ACSR       length=0.02 units=km  
+new line.fdr3_9C-fdr3_9-3_load          bus1=fdr3_9C.1.2        bus2=fdr3_9-3_load.1.2  geometry=UG_triplex_4_ACSR       length=0.03 units=km  
+//tr13
+new line.fdr3_13A-fdr3_13_load          bus1=fdr3_13A.1.2       bus2=fdr3_13_load.1.2   geometry=UG_triplex_4_ACSR    length=0.01 units=km  
+//tr14
+new line.fdr3_14C-fdr3_14-1_load        bus1=fdr3_14C.1.2       bus2=fdr3_14-1_load.1.2 geometry=UG_triplex_4_ACSR    length=0.01 units=km  
+new line.fdr3_14-1_load-fdr3_14-2_load  bus1=fdr3_14-1_load.1.2 bus2=fdr3_14-2_load.1.2 geometry=UG_triplex_4_ACSR    length=0.02 units=km  
+//tr15
+new line.fdr3_16A-fdr3_16_load          bus1=fdr3_16A.1.2       bus2=fdr3_16_load.1.2   geometry=UG_triplex_4_ACSR    length=0.01 units=km  
+//tr16
+new line.fdr3_17B-fdr3_17_load          bus1=fdr3_17B.1.2       bus2=fdr3_17_load.1.2   geometry=UG_triplex_4_ACSR    length=0.01 units=km  
+//tr17
+new line.fdr3_18C-fdr3_18_load          bus1=fdr3_18C.1.2       bus2=fdr3_18_load.1.2   geometry=UG_triplex_4_ACSR    length=0.01 units=km  
+//tr18
+new line.fdr3_19C-fdr3_19_load          bus1=fdr3_19C.1.2       bus2=fdr3_19_load.1.2   geometry=UG_triplex_4_ACSR    length=0.01 units=km  
+//tr19
+new line.fdr3_21A-fdr3_21_load          bus1=fdr3_21A.1.2       bus2=fdr3_21_load.1.2   geometry=UG_triplex_4_ACSR    length=0.01 units=km  
+//tr20
+new line.fdr3_22A-fdr3_22_load          bus1=fdr3_22A.1.2       bus2=fdr3_22_load.1.2   geometry=UG_triplex_4_ACSR    length=0.01 units=km  

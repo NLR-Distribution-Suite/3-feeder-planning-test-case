@@ -1,0 +1,73 @@
+// OH main line 3-ph
+New LineGeometry.OH_6_ACSR_3P nconds=4 nphases=3 reduce=y
+~ cond=1 wire=#6_ACSR_6/1 x=-3.67 h=31 units=ft
+~ cond=2 wire=#6_ACSR_6/1 x=0 h=31 units=ft
+~ cond=3 wire=#6_ACSR_6/1 x=3.67 h=31 units=ft
+~ cond=4 wire=#6_AA_CLASS_A x=0 h=26 units=ft
+
+// OH main line 2-ph
+New LineGeometry.OH_6_ACSR_2P nconds=3 nphases=2 reduce=y
+~ cond=1 wire=#6_ACSR_6/1 x=-3.67 h=31 units=ft
+~ cond=2 wire=#6_ACSR_6/1 x=3.67 h=31 units=ft
+~ cond=3 wire=#6_AA_CLASS_A x=0 h=26 units=ft
+
+// OH main line 1-ph
+New LineGeometry.OH_6_ACSR_1P nconds=2 nphases=1 reduce=y
+~ cond=1 wire=#6_ACSR_6/1 x=-0.67 h=31 units=ft
+~ cond=2 wire=#6_AA_CLASS_A x=0 h=26 units=ft
+
+
+// secondary quadruplex
+New LineGeometry.OH_quadruplex_4_ACSR nconds=4 nphases=3 reduce=y
+~ cond=1 wire=#4_ACSR_7/1 x=-0.015 h=10.5 units=ft
+~ cond=2 wire=#4_ACSR_7/1 x=0 h=10 units=ft
+~ cond=3 wire=#4_ACSR_7/1 x=0.015 h=9.5 units=ft
+~ cond=4 wire=#4_AA_CLASS_A x=0 h=9 units=ft
+
+New LineGeometry.OH_quadruplex_4/0 nconds=4 nphases=3 reduce=y
+~ cond=1 wire=#4/0_ACSR_6/1 x=-0.015 h=10.5 units=ft
+~ cond=2 wire=#4/0_ACSR_6/1 x=0 h=10 units=ft
+~ cond=3 wire=#4/0_ACSR_6/1 x=0.015 h=9.5 units=ft
+~ cond=4 wire=#3/0_ACSR_6/1 x=0 h=9 units=ft
+
+// secondary triplex
+New LineGeometry.triplex_4_ACSR nconds=3 nphases=2 reduce=y
+~ cond=1 wire=#4_ACSR_7/1 x=-0.015 h=10.5 units=ft
+~ cond=2 wire=#4_ACSR_7/1 x=0 h=10 units=ft
+~ cond=3 wire=#4_ACSR_7/1 x=0.015 h=9 units=ft
+
+// underground concentric neutral geometry 3 phase
+New LineGeometry.UG_2_acsr_full_neutral_3P nconds=3 nphases=3
+~ cond=1 CNcable=2_6/1_acsr_full_neutral x=-0.5 h=-4 units=ft
+~ cond=2 CNcable=2_6/1_acsr_full_neutral x=0 h=-4 units=ft
+~ cond=3 CNcable=2_6/1_acsr_full_neutral x=0.5 h=-4 units=ft
+
+// underground concentric neutral geometry 2 phase
+New LineGeometry.UG_2_acsr_full_neutral_2P nconds=2 nphases=2
+~ cond=1 CNcable=2_6/1_acsr_full_neutral x=-0.15 h=-4 units=ft
+~ cond=2 CNcable=2_6/1_acsr_full_neutral x=0 h=-4 units=ft
+
+// underground concentric neutral geometry 1 phase
+New LineGeometry.UG_2_acsr_full_neutral_1P nconds=1 nphases=1
+~ cond=1 CNcable=2_6/1_acsr_full_neutral x=0 h=-4 units=ft
+
+// UG secondary quadruplex
+// set at near ground level for UG based on this discussion:
+// https://sourceforge.net/p/electricdss/discussion/861976/thread/9e118f50/?limit=25#ddbc
+New LineGeometry.UG_quadruplex_4_ACSR nconds=4 nphases=3 reduce=y
+~ cond=1 wire=#4_ACSR_7/1 x=-0.015 h=0.4 units=ft
+~ cond=2 wire=#4_ACSR_7/1 x=0 h=0.3 units=ft
+~ cond=3 wire=#4_ACSR_7/1 x=0.015 h=0.2 units=ft
+~ cond=4 wire=#4_AA_CLASS_A x=0 h=0.1 units=ft
+
+New LineGeometry.UG_quadruplex_4/0 nconds=4 nphases=3 reduce=y
+~ cond=1 wire=#4/0_ACSR_6/1 x=-0.015 h=0.4 units=ft
+~ cond=2 wire=#4/0_ACSR_6/1 x=0 h=0.3 units=ft
+~ cond=3 wire=#4/0_ACSR_6/1 x=0.015 h=0.2 units=ft
+~ cond=4 wire=#3/0_ACSR_6/1 x=0 h=0.1 units=ft
+
+// UG secondary triplex
+New LineGeometry.UG_triplex_4_ACSR nconds=3 nphases=2 reduce=y
+~ cond=1 wire=#4_ACSR_7/1 x=-0.015 h=0.3 units=ft
+~ cond=2 wire=#4_ACSR_7/1 x=0 h=0.2 units=ft
+~ cond=3 wire=#4_ACSR_7/1 x=0.015 h=0.1 units=ft

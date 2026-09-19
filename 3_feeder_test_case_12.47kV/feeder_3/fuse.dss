@@ -1,0 +1,68 @@
+New Line.fdr3_1-fdr3_1_fuse bus1=fdr3_1.1.2.3 bus2=fdr3_1_fuse.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=3 
+New SwtControl.fdr3_1-fdr3_1_fuse_control SwitchedObj=Line.fdr3_1-fdr3_1_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_2-fdr3_2_fuse bus1=fdr3_2.1.2.3 bus2=fdr3_2_fuse.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=3 
+New SwtControl.fdr3_2-fdr3_2_fuse_control SwitchedObj=Line.fdr3_2-fdr3_2_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_3-fdr3_3_fuse bus1=fdr3_3.1.2.3 bus2=fdr3_3_fuse.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=3 
+New SwtControl.fdr3_3-fdr3_3_fuse_control SwitchedObj=Line.fdr3_3-fdr3_3_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_23-fdr3_23_fuse bus1=fdr3_23.1.2.3 bus2=fdr3_23_fuse.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=3 
+New SwtControl.fdr3_23-fdr3_23_fuse_control SwitchedObj=Line.fdr3_23-fdr3_23_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_4-fdr3_4_fuse bus1=fdr3_4.1 bus2=fdr3_4_fuse.1 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
+New SwtControl.fdr3_4-fdr3_4_fuse_control SwitchedObj=Line.fdr3_4-fdr3_4_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_6-fdr3_6_fuse-1 bus1=fdr3_6.2 bus2=fdr3_6_fuse-1.2 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1
+New SwtControl.fdr3_6-fdr3_6_fuse-1_control SwitchedObj=Line.fdr3_6-fdr3_6_fuse-1 SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_6-fdr3_6_fuse-2 bus1=fdr3_6.2 bus2=fdr3_6_fuse-2.2 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1
+New SwtControl.fdr3_6-fdr3_6_fuse-2_control SwitchedObj=Line.fdr3_6-fdr3_6_fuse-2 SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_5-fdr3_5_fuse bus1=fdr3_5.3 bus2=fdr3_5_fuse.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1
+New SwtControl.fdr3_5-fdr3_5_fuse_control SwitchedObj=Line.fdr3_5-fdr3_5_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_8-1-fdr3_8-1_fuse bus1=fdr3_8-1.1 bus2=fdr3_8-1_fuse.1 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
+New SwtControl.fdr3_8-1-fdr3_8-1_fuse_control SwitchedObj=Line.fdr3_8-1-fdr3_8-1_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_8-2-fdr3_8-2_fuse bus1=fdr3_8-2.2 bus2=fdr3_8-2_fuse.2 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1
+New SwtControl.fdr3_8-2-fdr3_8-2_fuse_control SwitchedObj=Line.fdr3_8-2-fdr3_8-2_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_8-3-fdr3_8-3_fuse bus1=fdr3_8-3.3 bus2=fdr3_8-3_fuse.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
+New SwtControl.fdr3_8-3-fdr3_8-3_fuse_control SwitchedObj=Line.fdr3_8-3-fdr3_8-3_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_11-fdr3_11_fuse bus1=fdr3_11.2 bus2=fdr3_11_fuse.2 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
+New SwtControl.fdr3_11-fdr3_11_fuse_control SwitchedObj=Line.fdr3_11-fdr3_11_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_9-fdr3_9_fuse-1 bus1=fdr3_9.1 bus2=fdr3_9_fuse-1.1 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
+New SwtControl.fdr3_9-fdr3_9_fuse-1_control SwitchedObj=Line.fdr3_9-fdr3_9_fuse-1 SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_9-fdr3_9_fuse-2 bus1=fdr3_9.2 bus2=fdr3_9_fuse-2.2 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
+New SwtControl.fdr3_9-fdr3_9_fuse-2_control SwitchedObj=Line.fdr3_9-fdr3_9_fuse-2 SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_9-fdr3_9_fuse-3 bus1=fdr3_9.3 bus2=fdr3_9_fuse-3.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
+New SwtControl.fdr3_9-fdr3_9_fuse-3_control SwitchedObj=Line.fdr3_9-fdr3_9_fuse-3 SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_13-fdr3_13_fuse bus1=fdr3_13.1 bus2=fdr3_13_fuse.1 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
+New SwtControl.fdr3_13-fdr3_13_fuse_control SwitchedObj=Line.fdr3_13-fdr3_13_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_14-fdr3_14_fuse bus1=fdr3_14.3 bus2=fdr3_14_fuse.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1
+New SwtControl.fdr3_14-fdr3_14_fuse_control SwitchedObj=Line.fdr3_14-fdr3_14_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_16-fdr3_16_fuse bus1=fdr3_16.1 bus2=fdr3_16_fuse.1 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
+New SwtControl.fdr3_16-fdr3_16_fuse_control SwitchedObj=Line.fdr3_16-fdr3_16_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_17-fdr3_17_fuse bus1=fdr3_17.2 bus2=fdr3_17_fuse.2 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
+New SwtControl.fdr3_17-fdr3_17_fuse_control SwitchedObj=Line.fdr3_17-fdr3_17_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_18-fdr3_18_fuse bus1=fdr3_18.3 bus2=fdr3_18_fuse.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
+New SwtControl.fdr3_18-fdr3_18_fuse_control SwitchedObj=Line.fdr3_18-fdr3_18_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_19-fdr3_19_fuse bus1=fdr3_19.3 bus2=fdr3_19_fuse.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
+New SwtControl.fdr3_19-fdr3_19_fuse_control SwitchedObj=Line.fdr3_19-fdr3_19_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_21-fdr3_21_fuse bus1=fdr3_21.1 bus2=fdr3_21_fuse.1 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
+New SwtControl.fdr3_21-fdr3_21_fuse_control SwitchedObj=Line.fdr3_21-fdr3_21_fuse SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_22-fdr3_22_fuse bus1=fdr3_22.1 bus2=fdr3_22_fuse.1 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
+New SwtControl.fdr3_22-fdr3_22_fuse_control SwitchedObj=Line.fdr3_22-fdr3_22_fuse SwitchedTerm=2 Normal=Closed State=Closed

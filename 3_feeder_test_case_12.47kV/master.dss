@@ -8,7 +8,7 @@ Clear
 // modeled as an ideal voltage source connecting a 138 kV transmission system to a 12.47 kV distribution substation
 // 138 kV is directly stepped down to 12.47 kV at the substation which is the primary voltage level for the distribution feeders
 New Circuit.three_feeder_planning_ckt 
-Edit Vsource.source bus=source_.1.2.3 pu=1.03 basekv=138 r1=1e-05 x1=1e-5 r0=1e-05 x0=1e-05 
+Edit Vsource.source bus=source_.1.2.3 pu=1 basekv=138 r1=1e-05 x1=1e-5 r0=1e-05 x0=1e-05 
 New Line.source_connector bus1=source_.1.2.3 bus2=source.1.2.3 length = 1e-5 units=kft r1=1e-05 x1=1e-5 r0=1e-05 x0=1e-05 phases=3
 
 Redirect LineCode.dss
@@ -28,40 +28,31 @@ Redirect substation.dss
 !Redirect feeder_2/Transformers.dss
 !Redirect feeder_2/Loads.dss
 
-Redirect feeder_3/LineCode.dss
+Redirect feeder_3/lineCode.dss
 Redirect feeder_3/wiredata.dss
-Redirect feeder_3/LineGeometry.dss
+Redirect feeder_3/linegeometry.dss
 Redirect feeder_3/breaker.dss
 Redirect feeder_3/recloser.dss
-Redirect feeder_3/NormallyClosedSwitches.dss
-Redirect feeder_3/NormallyOpenSwitches.dss
-Redirect feeder_3/Lines.dss
-Redirect feeder_3/xfmr_code.dss
-Redirect feeder_3/Transformers.dss
-Redirect feeder_3/Loads.dss
+Redirect feeder_3/fuse.dss
+Redirect feeder_3/normallyclosedswitches.dss
+Redirect feeder_3/normallyopenswitches.dss
+Redirect feeder_3/lines.dss
+Redirect feeder_3/xfmrcode.dss
+Redirect feeder_3/transformers.dss
+Redirect feeder_3/loads.dss
 
-Redirect switch.dss
+Redirect tieswitch.dss
 
-! set normal feeder configuration
-! intra-feeder connections
-!open line.fdr1_4_fdr1_11
-!open line.fdr2_4_fdr2_11
-!open line.fdr3_4_fdr3_11
-
-! inter-feeder connections
-!open line.fdr2-fdr1
-!open line.fdr3_12_fdr2_12
-!open line.fdr2_4_fdr1_11
-
-! define simulation parameters
+// define simulation parameters
 Set DefaultBaseFreq=60
-Set VoltageBases=[138, 12.47, 0.480, 0.208]
 Set Earthmodel=Carson
+Set VoltageBases=[138, 12.47, 0.480, 0.208]
 Calcv
-
-new energymeter.meter1 element=Line.source_connector 1
 Set MaxControlIter=100
 Set MaxIter=100
 
-! solve the system
+// add energy meter at the substation head
+new energymeter.meter1 element=Line.source_connector 1
+
+// solve the system
 solve
