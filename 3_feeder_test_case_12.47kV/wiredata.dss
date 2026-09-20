@@ -12,7 +12,7 @@ New WireData.#3/0_ACSR_6/1 diam=0.502 radunits=in GMRac=0.006 GMRunits=ft Rac=0.
 // ref: https://www.okonite.com/media/catalog/product/files/2-34.pdf?v=1777491314
 // https://opendss.epri.com/CableModelinginOpenDSS.html
 New CNDATA.2_6/1_acsr_full_neutral Runits=kft Radunits=in GMRunits=in 
-~ InsLayer=0.03 DiaIns=0.78 DiaCable=0.98 epsR=2.3 // cable
+~ InsLayer=0.22 DiaIns=0.76 DiaCable=0.97 epsR=2.3 // cable
 ~ Rac=0.32 GMRac=0.05016 diam=0.316 // Phase conductor
 ~ Rstrand=2.55 GMRstrand=0.02496 DiaStrand=0.064 k=10 // Neutral
-~ normamps=120
+~ normamps=120 // 90 deg. ampacity ducts

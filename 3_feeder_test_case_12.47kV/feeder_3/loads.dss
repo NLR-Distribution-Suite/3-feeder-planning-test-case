@@ -1,9 +1,9 @@
 /* ########################################### FEEDER 3 ######################################################################## */
 ! three-phase loads
-New Load.fdr3_1_load    Bus1=fdr3_1_load.1.2.3     phases=3 kv=0.48   kW=230  pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
-New Load.fdr3_2_load    Bus1=fdr3_2_load.1.2.3     phases=3 kv=0.48   kW=84   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
-New Load.fdr3_3_load    Bus1=fdr3_3_load.1.2.3     phases=3 kv=0.48   kW=93   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
-New Load.fdr3_23_load   Bus1=fdr3_23_load.1.2.3    phases=3 kv=0.48   kW=85   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+New Load.fdr3_1_load    Bus1=fdr3_1_load.1.2.3     phases=3 kv=0.48   kW=230  pf=0.9 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+New Load.fdr3_2_load    Bus1=fdr3_2_load.1.2.3     phases=3 kv=0.48   kW=84   pf=0.9 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+New Load.fdr3_3_load    Bus1=fdr3_3_load.1.2.3     phases=3 kv=0.48   kW=93   pf=0.9 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+New Load.fdr3_23_load   Bus1=fdr3_23_load.1.2.3    phases=3 kv=0.48   kW=220  pf=0.9 Vminpu=0.8 Vmaxpu=1.2 conn=wye
 
 
 ! single-phase loads

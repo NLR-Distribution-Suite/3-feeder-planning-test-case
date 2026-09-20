@@ -16,7 +16,6 @@ New LineGeometry.OH_6_ACSR_1P nconds=2 nphases=1 reduce=y
 ~ cond=1 wire=#6_ACSR_6/1 x=-0.67 h=31 units=ft
 ~ cond=2 wire=#6_AA_CLASS_A x=0 h=26 units=ft
 
-
 // secondary quadruplex
 New LineGeometry.OH_quadruplex_4_ACSR nconds=4 nphases=3 reduce=y
 ~ cond=1 wire=#4_ACSR_7/1 x=-0.015 h=10.5 units=ft

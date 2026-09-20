@@ -1,15 +1,21 @@
+/* Developed By: Abodh Poudyal and Bryan Palmintier*/
+/* Grid Planning and Analysis Center*/
+/* National Laboratory of the Rockies*/
 
 // Substation configuration for the 3-feeder system
 // The substation connects the source to three feeder bus bars through individual transformers and breakers.
 
 // ---------- FEEDER-3 ----------
-// Source -> feeder 3/2 transformer connection via breaker
+// Source -> feeder 3/2 transformer connection via breaker with trip relay
 New Line.source_to_fdr3_xfmr_breaker bus1=source.1.2.3 bus2=fdr3_xfmr_primary.1.2.3  linecode=switch length=1e-3 units=kft linetype=SWT_BRK switch=true Phases=3
-New SwtControl.source_to_fdr3_xfmr_breaker_control SwitchedObj=Line.source_to_fdr3_xfmr_breaker SwitchedTerm=1 Normal=Closed State=Closed
+New Relay.source_to_fdr3_xfmr_breaker_relay MonitoredObj=Line.source_to_fdr3_xfmr_breaker MonitoredTerm=1 Type=Current 
+~ PhaseCurve=SC_very_inverse_speed_691-9-U3 GroundCurve=SC_very_inverse_speed_691-9-U3
+~ PhaseTrip=8 GroundTrip=10
+~ enabled=Y
 
 New Transformer.sub_feeder3_xfmr phases=3 windings=2 xhl=5
-~ wdg=1 bus=fdr3_xfmr_primary.1.2.3 conn=delta kv=138 kva=2000
-~ wdg=2 bus=fdr3_ltc_primary.1.2.3 conn=wye kv=12.47 kva=2000
+~ wdg=1 bus=fdr3_xfmr_primary.1.2.3 conn=delta kv=138 kva=2500
+~ wdg=2 bus=fdr3_ltc_primary.1.2.3 conn=wye kv=12.47 kva=2500
 ~ %loadloss=0.6 %noloadloss=0.12 
 
 // model subsation transformer LTC (Load Tap Changer) functionality as an ideal Y-Y transformer with regControls for voltage regulation
@@ -17,43 +23,50 @@ New Transformer.FEEDER_REGA phases=1 windings=2 Bank=FEEDER_REG
 ~ buses=(fdr3_ltc_primary.1, fdr3_ltc_secondary.1)  
 ~ conns=(wye, wye)  
 ~ kvs=(7.2, 7.2)  
-~ kvas=(2000, 2000)  
+~ kvas=(2500, 2500)  
 ~ xhl=0.1 %loadloss=.001 wdg=2 Maxtap=1.1 Mintap=0.9
 New Transformer.FEEDER_REGB phases=1 windings=2 Bank=FEEDER_REG 
 ~ buses=(fdr3_ltc_primary.2, fdr3_ltc_secondary.2)  
 ~ conns=(wye, wye)  
 ~ kvs=(7.2, 7.2)  
-~ kvas=(2000, 2000)  
+~ kvas=(2500, 2500)  
 ~ xhl=0.1 %loadloss=.001 wdg=2 Maxtap=1.1 Mintap=0.9
 New Transformer.FEEDER_REGC phases=1 windings=2 Bank=FEEDER_REG 
 ~ buses=(fdr3_ltc_primary.3, fdr3_ltc_secondary.3)  
 ~ conns=(wye, wye)  
 ~ kvs=(7.2, 7.2)  
-~ kvas=(2000, 2000)  
+~ kvas=(2500, 2500)  
 ~ xhl=0.1 %loadloss=.001 wdg=2 Maxtap=1.1 Mintap=0.9
-New RegControl.FEEDER_REGA transformer=FEEDER_REGA winding=2 vreg=123 ptratio=60 band=2 
-New RegControl.FEEDER_REGB transformer=FEEDER_REGB winding=2 vreg=123 ptratio=60 band=2 
-New RegControl.FEEDER_REGC transformer=FEEDER_REGC winding=2 vreg=123 ptratio=60 band=2
+New RegControl.FEEDER_REGA transformer=FEEDER_REGA winding=2 vreg=124 ptratio=60 band=2 
+New RegControl.FEEDER_REGB transformer=FEEDER_REGB winding=2 vreg=124 ptratio=60 band=2 
+New RegControl.FEEDER_REGC transformer=FEEDER_REGC winding=2 vreg=124 ptratio=60 band=2
 
-// Transformer's secondary connected to Feeder 3 bus bar via breaker
+// Transformer's secondary connected to Feeder 3 bus bar via breaker with trip relay
 New Line.fdr3_xfmr_to_fdr3_bus_bar_breaker bus1=fdr3_ltc_secondary.1.2.3 bus2=fdr3_bus_bar.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_BRK switch=true Phases=3
-New SwtControl.fdr3_xfmr_to_fdr3_bus_bar_breaker_control SwitchedObj=Line.fdr3_xfmr_to_fdr3_bus_bar_breaker SwitchedTerm=1 Normal=Closed State=Closed
+New Relay.fdr3_xfmr_to_fdr3_bus_bar_breaker_relay MonitoredObj=Line.fdr3_xfmr_to_fdr3_bus_bar_breaker MonitoredTerm=1 Type=Current 
+~ PhaseCurve=SC_very_inverse_speed_691-9-U3 GroundCurve=SC_very_inverse_speed_691-9-U3
+~ PhaseTrip=80 GroundTrip=100
+~ enabled=Y
 
 // ---------- FEEDER-2 ----------
 // feeder 2 is connected with the transformer serving feeder 3
-// Feeder 3 bus bar is connected to feeder 2 bus bar via a breaker
+// Feeder 3 bus bar is connected to feeder 2 bus bar via manual circuit breaker
 New Line.feeder3_to_feeder2_breaker bus1=fdr3_bus_bar.1.2.3 bus2=fdr2_bus_bar.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_BRK switch=true Phases=3
 New SwtControl.feeder3_to_feeder2_breaker_control SwitchedObj=Line.feeder3_to_feeder2_breaker SwitchedTerm=1 Normal=Closed State=Closed
 
-// open breaker between feeder 2 and feeder 1
+// open manual circuit breaker between feeder 2 and feeder 1
 New Line.feeder2_to_feeder1_breaker bus1=fdr2_bus_bar.1.2.3 bus2=fdr1_bus_bar.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_BRK switch=true Phases=3
 New SwtControl.feeder2_to_feeder1_breaker_control SwitchedObj=Line.feeder2_to_feeder1_breaker SwitchedTerm=1 Normal=Open State=Open
 
 
 // ---------- FEEDER-1 ----------
-// Source -> feeder 1 transformer connection via breaker
+// Source -> feeder 1 transformer connection via breaker with trip relay
 New Line.source_to_fdr1_xfmr_breaker bus1=source.1.2.3 bus2=fdr1_xfmr_primary.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_BRK switch=true Phases=3
-New SwtControl.source_to_fdr1_xfmr_breaker_control SwitchedObj=Line.source_to_fdr1_xfmr_breaker SwitchedTerm=1 Normal=Closed State=Closed
+New Relay.source_to_fdr1_xfmr_breaker_relay MonitoredObj=Line.source_to_fdr1_xfmr_breaker MonitoredTerm=1 Type=Current 
+~ PhaseCurve=SC_very_inverse_speed_691-9-U3 GroundCurve=SC_very_inverse_speed_691-9-U3
+~ PhaseTrip=5 GroundTrip=8
+~ enabled=Y
+
 
 // Feeder 1 transformer secondary connected to Feeder 1 bus bar via breaker
 // There is no LTC on this transformer
@@ -62,5 +75,9 @@ New Transformer.sub_feeder1_xfmr phases=3 windings=2 xhl=5
 ~ wdg=2 bus=fdr1_xfmr_secondary.1.2.3 conn=wye kv=12.47 kva=1000
 ~ %loadloss=0.6 %noloadloss=0.12 
 
+// Transformer's secondary connected to Feeder 1 bus bar via breaker with trip relay
 New Line.fdr1_xfmr_to_fdr1_bus_bar_breaker bus1=fdr1_xfmr_secondary.1.2.3 bus2=fdr1_bus_bar.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_BRK switch=true Phases=3
-New SwtControl.fdr1_xfmr_to_fdr1_bus_bar_breaker_control SwitchedObj=Line.fdr1_xfmr_to_fdr1_bus_bar_breaker SwitchedTerm=1 Normal=Closed State=Closed
+New Relay.fdr1_xfmr_to_fdr1_bus_bar_breaker_relay MonitoredObj=Line.fdr1_xfmr_to_fdr1_bus_bar_breaker MonitoredTerm=1 Type=Current 
+~ PhaseCurve=SC_very_inverse_speed_691-9-U3 GroundCurve=SC_very_inverse_speed_691-9-U3
+~ PhaseTrip=50 GroundTrip=60
+~ enabled=Y

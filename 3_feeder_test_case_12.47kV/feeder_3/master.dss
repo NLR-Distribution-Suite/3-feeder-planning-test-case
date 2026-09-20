@@ -6,32 +6,42 @@
 clear
 
 New Circuit.three_feeder_planning_ckt_feeder3
-Edit Vsource.source bus=fdr3_bus_bar.1.2.3 pu=1.025 basekv=12.47 r1=1e-05 x1=1e-5 r0=1e-05 x0=1e-05 
+Edit Vsource.source bus=fdr3_bus_bar.1.2.3 pu=1.03 basekv=12.47 r1=1e-05 x1=1e-5 r0=1e-05 x0=1e-05 
 
-Redirect linecode.dss
-Redirect wiredata.dss
-Redirect linegeometry.dss
-Redirect tcccurves.dss
+// Redirect common line and transformer data files from the parent directory
+Redirect ../linecode.dss
+Redirect ../wiredata.dss
+Redirect ../linegeometry.dss
+Redirect ../tcccurves.dss
+Redirect ../xfmrcode.dss
+
+// Redirect feeder-specific data files from the current directory
 Redirect breaker.dss
 Redirect recloser.dss
 Redirect fuse.dss
 Redirect normallyclosedswitches.dss
 Redirect normallyopenswitches.dss
 Redirect lines.dss
-Redirect xfmrcode.dss
 Redirect transformers.dss
 Redirect loads.dss
+Redirect capacitor.dss
 
 // define simulation parameters
 Set DefaultBaseFreq=60
 Set Earthmodel=Carson
 Set VoltageBases=[138, 12.47, 0.480, 0.208]
 Calcv
-Set MaxControlIter=100
-Set MaxIter=100
 
 // add energy meter at the substation head
 new energymeter.meter1 element=Line.fdr3_feeder_head_breaker 1
 
-// solve the system
+// although protection devices are defined, they do not work well in power flow settings where all control actions are assumed to be instantaneous
+// disable protection control elements in power flow
+batchedit relay..* enabled=N
+batchedit recloser..* enabled=N
+batchedit fuse..* enabled=N
+
+// set control iterations and solve the system
+Set MaxControlIter=300
+Set MaxIter=300
 Solve

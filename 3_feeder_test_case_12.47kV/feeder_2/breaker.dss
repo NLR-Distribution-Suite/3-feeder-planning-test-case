@@ -1,1 +1,8 @@
+// Added Feeder breaker with Relay. the Relay settings are based on the following discussions
+// https://sourceforge.net/p/electricdss/discussion/861976/thread/b92586ab/#e8e9
+
 New Line.fdr2_feeder_head_breaker bus1=fdr2_bus_bar.1.2.3 bus2=fdr2_0.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_BRK switch=true Phases=3
+New Relay.fdr2_feeder_head_breaker_relay MonitoredObj=Line.fdr2_feeder_head_breaker MonitoredTerm=1 Type=Current 
+~ PhaseCurve=SC_very_inverse_speed_691-9-U3 GroundCurve=SC_very_inverse_speed_691-9-U3
+~ PhaseTrip=80 GroundTrip=100
+~ enabled=Y
