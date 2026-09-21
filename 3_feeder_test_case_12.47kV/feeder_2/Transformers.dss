@@ -5,7 +5,7 @@ new Transformer.fdr2_tr1 phases=3 windings=2
 ~ buses=[fdr2_1_fuse.1.2.3 fdr2_1_sec.1.2.3]
 ~ conns=[wye wye] 
 ~ kvs=[12.47 0.48] 
-~ kvas=[250 250] 
+~ kvas=[200 200] 
 ~ xhl=4 %loadloss=1.5 %noloadloss=0.25
 
 new Transformer.fdr2_tr2 phases=3 windings=2 
@@ -22,11 +22,25 @@ new Transformer.fdr2_tr3 phases=3 windings=2
 ~ kvas=[100 100] 
 ~ xhl=3.5 %loadloss=1.75 %noloadloss=0.30
 
+new Transformer.fdr2_tr12 phases=3 windings=2 
+~ buses=[fdr2_9_fuse.1.2.3 fdr2_9_sec.1.2.3] 
+~ conns=[wye wye] 
+~ kvs=[12.47 0.48] 
+~ kvas=[100 100] 
+~ xhl=3.5 %loadloss=1.75 %noloadloss=0.30
+
 new Transformer.fdr2_tr21 phases=3 windings=2 
 ~ buses=[fdr2_23_fuse.1.2.3 fdr2_23_sec.1.2.3] 
 ~ conns=[wye wye] 
 ~ kvs=[12.47 0.48] 
 ~ kvas=[300 300] 
+~ xhl=4.5 %loadloss=1.3 %noloadloss=0.2
+
+new Transformer.fdr2_tr22 phases=3 windings=2 
+~ buses=[fdr2_14-3_fuse.1.2.3 fdr2_14-3_sec.1.2.3] 
+~ conns=[wye wye] 
+~ kvs=[12.47 0.48] 
+~ kvas=[100 100] 
 ~ xhl=4.5 %loadloss=1.3 %noloadloss=0.2
 
 
@@ -39,11 +53,8 @@ new Transformer.fdr2_tr8    XfmrCode=CT25   buses=[fdr2_8-1_fuse.1   fdr2_8-1A.1
 new Transformer.fdr2_tr9    XfmrCode=CT25   buses=[fdr2_8-2_fuse.2   fdr2_8-2B.1.0  fdr2_8-2B.0.2]
 new Transformer.fdr2_tr10   XfmrCode=CT25   buses=[fdr2_8-3_fuse.3   fdr2_8-3C.1.0  fdr2_8-3C.0.2]
 new Transformer.fdr2_tr11   XfmrCode=CT50   buses=[fdr2_11_fuse.2    fdr2_11B.1.0   fdr2_11B.0.2]
-new Transformer.fdr2_tr12A  XfmrCode=CT33   buses=[fdr2_9_fuse-1.1   fdr2_9A.1.0    fdr2_9A.0.2]
-new Transformer.fdr2_tr12B  XfmrCode=CT33   buses=[fdr2_9_fuse-2.2   fdr2_9B.1.0    fdr2_9B.0.2]
-new Transformer.fdr2_tr12C  XfmrCode=CT33   buses=[fdr2_9_fuse-3.3   fdr2_9C.1.0    fdr2_9C.0.2]
 new Transformer.fdr2_tr13   XfmrCode=CT10   buses=[fdr2_13_fuse.1    fdr2_13A.1.0   fdr2_13A.0.2]
-new Transformer.fdr2_tr14   XfmrCode=CT25   buses=[fdr2_14_fuse.3    fdr2_14C.1.0   fdr2_14C.0.2]
+new Transformer.fdr2_tr14   XfmrCode=CT25   buses=[fdr2_14_fuse-1.3  fdr2_14C.1.0   fdr2_14C.0.2]
 new Transformer.fdr2_tr15   XfmrCode=CT25   buses=[fdr2_16_fuse.1    fdr2_16A.1.0   fdr2_16A.0.2]
 new Transformer.fdr2_tr16   XfmrCode=CT15   buses=[fdr2_17_fuse.2    fdr2_17B.1.0   fdr2_17B.0.2]
 new Transformer.fdr2_tr17   XfmrCode=CT15   buses=[fdr2_18_fuse.3    fdr2_18C.1.0   fdr2_18C.0.2]

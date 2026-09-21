@@ -16,6 +16,9 @@ New SwtControl.fdr2_8_fdr2_8-1_control SwitchedObj=Line.fdr2_8_fdr2_8-1 Switched
 New Line.fdr2_9_fdr2_10 bus1=fdr2_9.1.2.3 bus2=fdr2_10.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
 New SwtControl.fdr2_9_fdr2_10_control SwitchedObj=Line.fdr2_9_fdr2_10 SwitchedTerm=1 Normal=Closed State=Closed
 
+New Line.fdr2_11_fdr2_11_sec_sw bus1=fdr2_11.1.2.3 bus2=fdr2_11_sec_sw.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
+New SwtControl.fdr2_11_fdr2_11_sec_sw_control SwitchedObj=Line.fdr2_11_fdr2_11_sec_sw SwitchedTerm=1 Normal=Closed State=Closed
+
 New Line.fdr2_12_fdr2_13_sw bus1=fdr2_12.1.2.3 bus2=fdr2_13_sw.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
 New SwtControl.fdr2_12_fdr2_13_sw_control SwitchedObj=Line.fdr2_12_fdr2_13_sw SwitchedTerm=1 Normal=Closed State=Closed
 

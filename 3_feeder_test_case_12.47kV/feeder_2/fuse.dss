@@ -13,6 +13,14 @@ New Line.fdr2_3-fdr2_3_fuse bus1=fdr2_3.1.2.3 bus2=fdr2_3_fuse.1.2.3 linecode=sw
 New fuse.fdr2_3-fdr2_3_fuse monitoredobj=Line.fdr2_3-fdr2_3_fuse monitoredterm=1
 ~ fusecurve=dss_default_tlink delay=10 ratedcurrent=10 enabled=Y
 
+New Line.fdr2_14-fdr2_14-3_fuse bus1=fdr2_14.1.2.3 bus2=fdr2_14-3_fuse.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=3 
+New fuse.fdr2_14-fdr2_14-3_fuse monitoredobj=Line.fdr2_14-fdr2_14-3_fuse monitoredterm=1
+~ fusecurve=dss_default_tlink delay=10 ratedcurrent=10 enabled=Y
+
+New Line.fdr2_9-fdr2_9_fuse bus1=fdr2_9.1.2.3 bus2=fdr2_9_fuse.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=3 
+New fuse.fdr2_9-fdr2_9_fuse monitoredobj=Line.fdr2_9-fdr2_9_fuse monitoredterm=1
+~ fusecurve=dss_default_tlink delay=10 ratedcurrent=10 enabled=Y
+
 New Line.fdr2_23-fdr2_23_fuse bus1=fdr2_23.1.2.3 bus2=fdr2_23_fuse.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=3 
 New fuse.fdr2_23-fdr2_23_fuse monitoredobj=Line.fdr2_23-fdr2_23_fuse monitoredterm=1
 ~ fusecurve=dss_default_tlink delay=10 ratedcurrent=10 enabled=Y
@@ -49,24 +57,12 @@ New Line.fdr2_11-fdr2_11_fuse bus1=fdr2_11.2 bus2=fdr2_11_fuse.2 linecode=switch
 New fuse.fdr2_11-fdr2_11_fuse monitoredobj=Line.fdr2_11-fdr2_11_fuse monitoredterm=1
 ~ fusecurve=dss_default_tlink delay=10 ratedcurrent=10 enabled=Y
 
-New Line.fdr2_9-fdr2_9_fuse-1 bus1=fdr2_9.1 bus2=fdr2_9_fuse-1.1 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
-New fuse.fdr2_9-fdr2_9_fuse-1 monitoredobj=Line.fdr2_9-fdr2_9_fuse-1 monitoredterm=1
-~ fusecurve=dss_default_tlink delay=10 ratedcurrent=5 enabled=Y
-
-New Line.fdr2_9-fdr2_9_fuse-2 bus1=fdr2_9.2 bus2=fdr2_9_fuse-2.2 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
-New fuse.fdr2_9-fdr2_9_fuse-2 monitoredobj=Line.fdr2_9-fdr2_9_fuse-2 monitoredterm=1
-~ fusecurve=dss_default_tlink delay=10 ratedcurrent=5 enabled=Y
-
-New Line.fdr2_9-fdr2_9_fuse-3 bus1=fdr2_9.3 bus2=fdr2_9_fuse-3.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
-New fuse.fdr2_9-fdr2_9_fuse-3 monitoredobj=Line.fdr2_9-fdr2_9_fuse-3 monitoredterm=1
-~ fusecurve=dss_default_tlink delay=10 ratedcurrent=5 enabled=Y
-
 New Line.fdr2_13-fdr2_13_fuse bus1=fdr2_13.1 bus2=fdr2_13_fuse.1 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 
 New fuse.fdr2_13-fdr2_13_fuse monitoredobj=Line.fdr2_13-fdr2_13_fuse monitoredterm=1
 ~ fusecurve=dss_default_tlink delay=10 ratedcurrent=5 enabled=Y
 
-New Line.fdr2_14-fdr2_14_fuse bus1=fdr2_14.3 bus2=fdr2_14_fuse.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1
-New fuse.fdr2_14-fdr2_14_fuse monitoredobj=Line.fdr2_14-fdr2_14_fuse monitoredterm=1
+New Line.fdr2_14-fdr2_14_fuse-1 bus1=fdr2_14.3 bus2=fdr2_14_fuse-1.3 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1
+New fuse.fdr2_14-fdr2_14_fuse-1 monitoredobj=Line.fdr2_14-fdr2_14_fuse-1 monitoredterm=1
 ~ fusecurve=dss_default_tlink delay=10 ratedcurrent=5 enabled=Y
 
 New Line.fdr2_16-fdr2_16_fuse bus1=fdr2_16.1 bus2=fdr2_16_fuse.1 linecode=switch length=1e-3 units=kft linetype=SWT_FUSE switch=true Phases=1 

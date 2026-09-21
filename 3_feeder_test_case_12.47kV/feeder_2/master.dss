@@ -5,8 +5,8 @@
 
 clear
 
-New Circuit.three_feeder_planning_ckt_feeder3
-Edit Vsource.source bus=fdr2_bus_bar.1.2.3 pu=1.03 basekv=12.47 r1=1e-03 x1=1e-03 r0=1e-03 x0=1e-03 
+New Circuit.three_feeder_planning_ckt_feeder2
+Edit Vsource.source bus=fdr2_bus_bar.1.2.3 pu=1.05 basekv=12.47 r1=1e-03 x1=1e-03 r0=1e-03 x0=1e-03 
 
 // Redirect common line and transformer data files from the parent directory
 Redirect ../linecode.dss
@@ -29,7 +29,7 @@ Redirect capacitor.dss
 // define simulation parameters
 Set DefaultBaseFreq=60
 Set Earthmodel=Carson
-Set VoltageBases=[138, 12.47, 0.480, 0.208]
+Set VoltageBases=[138, 12.47, 0.480, 0.240, 0.208]
 Calcv
 
 // add energy meter at the substation head

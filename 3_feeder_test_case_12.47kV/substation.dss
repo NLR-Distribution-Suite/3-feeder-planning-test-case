@@ -37,9 +37,9 @@ New Transformer.FEEDER_REGC phases=1 windings=2 Bank=FEEDER_REG
 ~ kvs=(7.2, 7.2)  
 ~ kvas=(2500, 2500)  
 ~ xhl=0.1 %loadloss=.001 wdg=2 Maxtap=1.1 Mintap=0.9
-New RegControl.FEEDER_REGA transformer=FEEDER_REGA winding=2 vreg=124 ptratio=60 band=2 
-New RegControl.FEEDER_REGB transformer=FEEDER_REGB winding=2 vreg=124 ptratio=60 band=2 
-New RegControl.FEEDER_REGC transformer=FEEDER_REGC winding=2 vreg=124 ptratio=60 band=2
+New RegControl.FEEDER_REGA transformer=FEEDER_REGA winding=2 vreg=126 ptratio=60 band=2 
+New RegControl.FEEDER_REGB transformer=FEEDER_REGB winding=2 vreg=126 ptratio=60 band=2 
+New RegControl.FEEDER_REGC transformer=FEEDER_REGC winding=2 vreg=126 ptratio=60 band=2
 
 // Transformer's secondary connected to Feeder 3 bus bar via breaker with trip relay
 New Line.fdr3_xfmr_to_fdr3_bus_bar_breaker bus1=fdr3_ltc_secondary.1.2.3 bus2=fdr3_bus_bar.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_BRK switch=true Phases=3
