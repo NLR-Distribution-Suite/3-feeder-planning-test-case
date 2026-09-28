@@ -21,15 +21,16 @@ Redirect xfmrcode.dss
 Redirect substation.dss
 
 // feeder 1 files
-// Redirect feeder_1/breaker.dss
-// Redirect feeder_1/recloser.dss
-// Redirect feeder_1/fuse.dss
-// Redirect feeder_1/normallyclosedswitches.dss
-// Redirect feeder_1/normallyopenswitches.dss
-// Redirect feeder_1/lines.dss
-// Redirect feeder_1/transformers.dss
-// Redirect feeder_1/loads.dss
-// Redirect feeder_1/capacitor.dss
+Redirect feeder_1/breaker.dss
+Redirect feeder_1/recloser.dss
+Redirect feeder_1/fuse.dss
+Redirect feeder_1/normallyclosedswitches.dss
+Redirect feeder_1/normallyopenswitches.dss
+Redirect feeder_1/regulator.dss
+Redirect feeder_1/lines.dss
+Redirect feeder_1/transformers.dss
+Redirect feeder_1/loads.dss
+Redirect feeder_1/capacitor.dss
 
 // feeder 2 files
 Redirect feeder_2/breaker.dss
@@ -73,5 +74,4 @@ batchedit fuse..* enabled=N
 // set control iterations and solve the system
 Set MaxControlIter=300
 Set MaxIter=300
-Set ControlMode=Static
 Solve

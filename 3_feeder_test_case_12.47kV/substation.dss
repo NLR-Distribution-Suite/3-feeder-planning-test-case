@@ -24,19 +24,19 @@ New Transformer.FEEDER_REGA phases=1 windings=2 Bank=FEEDER_REG
 ~ conns=(wye, wye)  
 ~ kvs=(7.2, 7.2)  
 ~ kvas=(2500, 2500)  
-~ xhl=0.1 %loadloss=.001 wdg=2 Maxtap=1.1 Mintap=0.9
+~ xhl=0.01 %loadloss=.001 wdg=2 Maxtap=1.1 Mintap=0.9
 New Transformer.FEEDER_REGB phases=1 windings=2 Bank=FEEDER_REG 
 ~ buses=(fdr3_ltc_primary.2, fdr3_ltc_secondary.2)  
 ~ conns=(wye, wye)  
 ~ kvs=(7.2, 7.2)  
 ~ kvas=(2500, 2500)  
-~ xhl=0.1 %loadloss=.001 wdg=2 Maxtap=1.1 Mintap=0.9
+~ xhl=0.01 %loadloss=.001 wdg=2 Maxtap=1.1 Mintap=0.9
 New Transformer.FEEDER_REGC phases=1 windings=2 Bank=FEEDER_REG 
 ~ buses=(fdr3_ltc_primary.3, fdr3_ltc_secondary.3)  
 ~ conns=(wye, wye)  
 ~ kvs=(7.2, 7.2)  
 ~ kvas=(2500, 2500)  
-~ xhl=0.1 %loadloss=.001 wdg=2 Maxtap=1.1 Mintap=0.9
+~ xhl=0.01 %loadloss=.001 wdg=2 Maxtap=1.1 Mintap=0.9
 New RegControl.FEEDER_REGA transformer=FEEDER_REGA winding=2 vreg=126 ptratio=60 band=2 
 New RegControl.FEEDER_REGB transformer=FEEDER_REGB winding=2 vreg=126 ptratio=60 band=2 
 New RegControl.FEEDER_REGC transformer=FEEDER_REGC winding=2 vreg=126 ptratio=60 band=2
@@ -71,8 +71,8 @@ New Relay.source_to_fdr1_xfmr_breaker_relay MonitoredObj=Line.source_to_fdr1_xfm
 // Feeder 1 transformer secondary connected to Feeder 1 bus bar via breaker
 // There is no LTC on this transformer
 New Transformer.sub_feeder1_xfmr phases=3 windings=2 xhl=5
-~ wdg=1 bus=fdr1_xfmr_primary.1.2.3 conn=delta kv=138 kva=1000  
-~ wdg=2 bus=fdr1_xfmr_secondary.1.2.3 conn=wye kv=12.47 kva=1000
+~ wdg=1 bus=fdr1_xfmr_primary.1.2.3 conn=delta kv=138 kva=1500 Tap=1
+~ wdg=2 bus=fdr1_xfmr_secondary.1.2.3 conn=wye kv=12.47 kva=1500 Tap=1.05
 ~ %loadloss=0.6 %noloadloss=0.12 
 
 // Transformer's secondary connected to Feeder 1 bus bar via breaker with trip relay
