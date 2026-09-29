@@ -14,6 +14,7 @@ Redirect ../wiredata.dss
 Redirect ../linegeometry.dss
 Redirect ../tcccurves.dss
 Redirect ../xfmrcode.dss
+Redirect ../xycurves.dss
 
 // Redirect feeder-specific data files from the current directory
 Redirect breaker.dss
@@ -25,6 +26,7 @@ Redirect lines.dss
 Redirect transformers.dss
 Redirect loads.dss
 Redirect capacitor.dss
+Redirect btm_pv.dss
 
 // define simulation parameters
 Set DefaultBaseFreq=60

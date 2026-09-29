@@ -11,6 +11,6 @@ New Transformer.fdr1_11_REGC phases=1 windings=2 xhl=0.01 %loadloss=0.001
 ~ wdg=1 bus=fdr1_11_reg.3 conn=wye kv=7.2 kva=5000 Maxtap=1.1 Mintap=0.9 tap=1
 ~ wdg=2 bus=fdr1_11.3 conn=wye kv=7.2 kva=5000 Maxtap=1.1 Mintap=0.9
 
-New RegControl.fdr1_11_REGA_regcontrol transformer=fdr1_11_REGA winding=2 vreg=123 ptratio=60 band=3 R=0 X=0 delay=5
-New RegControl.fdr1_11_REGB_regcontrol transformer=fdr1_11_REGB winding=2 vreg=123 ptratio=60 band=3 R=0 X=0 delay=5
-New RegControl.fdr1_11_REGC_regcontrol transformer=fdr1_11_REGC winding=2 vreg=123 ptratio=60 band=3 R=0 X=0 delay=5
+New RegControl.fdr1_11_REGA_regcontrol transformer=fdr1_11_REGA winding=2 vreg=123 ptratio=60 band=3 CTPrim=800 R=2 X=0.5 delay=5
+New RegControl.fdr1_11_REGB_regcontrol transformer=fdr1_11_REGB winding=2 vreg=123 ptratio=60 band=3 CTPrim=800 R=2 X=0.5 delay=5
+New RegControl.fdr1_11_REGC_regcontrol transformer=fdr1_11_REGC winding=2 vreg=123 ptratio=60 band=3 CTPrim=800 R=2 X=0.5 delay=5

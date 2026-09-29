@@ -18,6 +18,7 @@ Redirect wiredata.dss
 Redirect linegeometry.dss
 Redirect tcccurves.dss
 Redirect xfmrcode.dss
+Redirect xycurves.dss
 Redirect substation.dss
 
 // feeder 1 files
@@ -42,6 +43,7 @@ Redirect feeder_2/lines.dss
 Redirect feeder_2/transformers.dss
 Redirect feeder_2/loads.dss
 Redirect feeder_2/capacitor.dss
+Redirect feeder_2/btm_pv.dss
 
 // feeder 3 files
 Redirect feeder_3/breaker.dss
@@ -53,6 +55,7 @@ Redirect feeder_3/lines.dss
 Redirect feeder_3/transformers.dss
 Redirect feeder_3/loads.dss
 Redirect feeder_3/capacitor.dss
+Redirect feeder_3/btm_pv.dss
 
 Redirect tieswitch.dss
 
