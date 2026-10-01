@@ -1,0 +1,23 @@
+/* ########################################### FEEDER 3 ######################################################################## */
+! around the feeder trunk
+New Line.fdr3_0-fdr3_1_sw bus1=fdr3_0.1.2.3 bus2=fdr3_1_sw.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
+New SwtControl.fdr3_0-fdr3_1_sw_control SwitchedObj=Line.fdr3_0-fdr3_1_sw SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr3_0-fdr3_7_sw bus1=fdr3_0.1.2.3.0 bus2=fdr3_7_sw.1.2.3.0 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
+New SwtControl.fdr3_0-fdr3_7_sw_control SwitchedObj=Line.fdr3_0-fdr3_7_sw SwitchedTerm=1 Normal=Closed State=Closed
+
+! between lines and laterals
+New Line.fdr3_3_sw-fdr3_4 bus1=fdr3_3_sw.1.2.3 bus2=fdr3_4.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3  
+New SwtControl.fdr3_3_sw-fdr3_4_control SwitchedObj=Line.fdr3_3_sw-fdr3_4 SwitchedTerm=1 Normal=Closed State=Closed
+
+New Line.fdr3_8_fdr3_8-1 bus1=fdr3_8.1.2.3 bus2=fdr3_8-1.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
+New SwtControl.fdr3_8_fdr3_8-1_control SwitchedObj=Line.fdr3_8_fdr3_8-1 SwitchedTerm=1 Normal=Closed State=Closed
+
+New Line.fdr3_9_fdr3_10 bus1=fdr3_9.1.2.3 bus2=fdr3_10.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
+New SwtControl.fdr3_9_fdr3_10_control SwitchedObj=Line.fdr3_9_fdr3_10 SwitchedTerm=1 Normal=Closed State=Closed
+
+New Line.fdr3_12_fdr3_13_sw bus1=fdr3_12.1.2.3 bus2=fdr3_13_sw.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
+New SwtControl.fdr3_12_fdr3_13_sw_control SwitchedObj=Line.fdr3_12_fdr3_13_sw SwitchedTerm=1 Normal=Closed State=Closed
+
+New Line.fdr3_12_fdr3_15_sw bus1=fdr3_12.1.2.3 bus2=fdr3_15_sw.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
+New SwtControl.fdr3_12_fdr3_15_sw_control SwitchedObj=Line.fdr3_12_fdr3_15_sw SwitchedTerm=1 Normal=Closed State=Closed

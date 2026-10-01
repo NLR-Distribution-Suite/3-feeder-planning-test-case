@@ -1,0 +1,49 @@
+/* ########################################### FEEDER 3 ######################################################################## */
+
+// Three-phase 2-winding transformers
+new Transformer.fdr1_tr1 phases=3 windings=2
+~ buses=[fdr1_1_fuse.1.2.3 fdr1_1_sec.1.2.3]
+~ conns=[wye wye] 
+~ kvs=[12.47 0.48] 
+~ kvas=[300 300] 
+~ xhl=4 %loadloss=1.5 %noloadloss=0.25
+
+new Transformer.fdr1_tr2 phases=3 windings=2 
+~ buses=[fdr1_2_fuse.1.2.3 fdr1_2_sec.1.2.3] 
+~ conns=[wye wye] 
+~ kvs=[12.47 0.48] 
+~ kvas=[250 250] 
+~ xhl=3.5 %loadloss=1.75 %noloadloss=0.30
+
+new Transformer.fdr1_tr3 phases=3 windings=2 
+~ buses=[fdr1_3_fuse.1.2.3 fdr1_3_sec.1.2.3] 
+~ conns=[wye wye] 
+~ kvs=[12.47 0.48] 
+~ kvas=[200 200] 
+~ xhl=3.5 %loadloss=1.75 %noloadloss=0.30
+
+new Transformer.fdr1_tr12 phases=3 windings=2 
+~ buses=[fdr1_9_fuse.1.2.3 fdr1_9_sec.1.2.3] 
+~ conns=[wye wye] 
+~ kvs=[12.47 0.48] 
+~ kvas=[100 100] 
+~ xhl=3.5 %loadloss=1.75 %noloadloss=0.30
+
+
+// center tapped secondary transformers
+new Transformer.fdr1_tr4    XfmrCode=CT25   buses=[fdr1_4_fuse.1     fdr1_4A.1.0    fdr1_4A.0.2]
+new Transformer.fdr1_tr5    XfmrCode=CT25   buses=[fdr1_6_fuse-1.2   fdr1_6B-1.1.0  fdr1_6B-1.0.2]
+new Transformer.fdr1_tr7    XfmrCode=CT15   buses=[fdr1_6_fuse-2.2   fdr1_6B-2.1.0  fdr1_6B-2.0.2]
+new Transformer.fdr1_tr6    XfmrCode=CT15   buses=[fdr1_5_fuse.3     fdr1_5C.1.0    fdr1_5C.0.2]
+new Transformer.fdr1_tr8    XfmrCode=CT15   buses=[fdr1_8-1_fuse.1   fdr1_8-1A.1.0  fdr1_8-1A.0.2]
+new Transformer.fdr1_tr9    XfmrCode=CT15   buses=[fdr1_8-2_fuse.2   fdr1_8-2B.1.0  fdr1_8-2B.0.2]
+new Transformer.fdr1_tr10   XfmrCode=CT15   buses=[fdr1_8-3_fuse.3   fdr1_8-3C.1.0  fdr1_8-3C.0.2]
+new Transformer.fdr1_tr11   XfmrCode=CT33   buses=[fdr1_11_fuse.2    fdr1_11B.1.0   fdr1_11B.0.2]
+new Transformer.fdr1_tr13   XfmrCode=CT10   buses=[fdr1_13_fuse.1    fdr1_13A.1.0   fdr1_13A.0.2]
+new Transformer.fdr1_tr14   XfmrCode=CT25   buses=[fdr1_14_fuse-1.3  fdr1_14C.1.0   fdr1_14C.0.2]
+new Transformer.fdr1_tr15   XfmrCode=CT10   buses=[fdr1_16_fuse.1    fdr1_16A.1.0   fdr1_16A.0.2]
+new Transformer.fdr1_tr16   XfmrCode=CT15   buses=[fdr1_17_fuse.2    fdr1_17B.1.0   fdr1_17B.0.2]
+new Transformer.fdr1_tr17   XfmrCode=CT10   buses=[fdr1_18_fuse.3    fdr1_18C.1.0   fdr1_18C.0.2]
+new Transformer.fdr1_tr18   XfmrCode=CT10   buses=[fdr1_19_fuse.3    fdr1_19C.1.0   fdr1_19C.0.2]
+new Transformer.fdr1_tr19   XfmrCode=CT15   buses=[fdr1_21_fuse.1    fdr1_21A.1.0   fdr1_21A.0.2]
+new Transformer.fdr1_tr20   XfmrCode=CT15   buses=[fdr1_22_fuse.1    fdr1_22A.1.0   fdr1_22A.0.2]

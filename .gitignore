@@ -220,3 +220,4 @@ __marimo__/
 # dss output files
 *.dsv
 *.dbl
+*.txt

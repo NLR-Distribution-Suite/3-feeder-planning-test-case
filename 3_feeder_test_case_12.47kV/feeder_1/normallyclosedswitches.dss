@@ -1,0 +1,26 @@
+/* ########################################### FEEDER 3 ######################################################################## */
+! around the feeder trunk
+New Line.fdr1_0-fdr1_1_sw bus1=fdr1_0.1.2.3 bus2=fdr1_1_sw.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
+New SwtControl.fdr1_0-fdr1_1_sw_control SwitchedObj=Line.fdr1_0-fdr1_1_sw SwitchedTerm=2 Normal=Closed State=Closed
+
+New Line.fdr1_0-fdr1_7_sw bus1=fdr1_0.1.2.3.0 bus2=fdr1_7_sw.1.2.3.0 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
+New SwtControl.fdr1_0-fdr1_7_sw_control SwitchedObj=Line.fdr1_0-fdr1_7_sw SwitchedTerm=1 Normal=Closed State=Closed
+
+! between lines and laterals
+New Line.fdr1_3_sw-fdr1_4 bus1=fdr1_3_sw.1.2.3 bus2=fdr1_4.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3  
+New SwtControl.fdr1_3_sw-fdr1_4_control SwitchedObj=Line.fdr1_3_sw-fdr1_4 SwitchedTerm=1 Normal=Closed State=Closed
+
+New Line.fdr1_8_fdr1_8-1 bus1=fdr1_8.1.2.3 bus2=fdr1_8-1.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
+New SwtControl.fdr1_8_fdr1_8-1_control SwitchedObj=Line.fdr1_8_fdr1_8-1 SwitchedTerm=1 Normal=Closed State=Closed
+
+New Line.fdr1_9_fdr1_10 bus1=fdr1_9.1.2.3 bus2=fdr1_10.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
+New SwtControl.fdr1_9_fdr1_10_control SwitchedObj=Line.fdr1_9_fdr1_10 SwitchedTerm=1 Normal=Closed State=Closed
+
+New Line.fdr1_11_fdr1_11_sec_sw bus1=fdr1_11.1.2.3 bus2=fdr1_11_sec_sw.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
+New SwtControl.fdr1_11_fdr1_11_sec_sw_control SwitchedObj=Line.fdr1_11_fdr1_11_sec_sw SwitchedTerm=1 Normal=Closed State=Closed
+
+New Line.fdr1_12_fdr1_13_sw bus1=fdr1_12.1.2.3 bus2=fdr1_13_sw.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
+New SwtControl.fdr1_12_fdr1_13_sw_control SwitchedObj=Line.fdr1_12_fdr1_13_sw SwitchedTerm=1 Normal=Closed State=Closed
+
+New Line.fdr1_12_fdr1_15_sw bus1=fdr1_12.1.2.3 bus2=fdr1_15_sw.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_SECT switch=true Phases=3 
+New SwtControl.fdr1_12_fdr1_15_sw_control SwitchedObj=Line.fdr1_12_fdr1_15_sw SwitchedTerm=1 Normal=Closed State=Closed
