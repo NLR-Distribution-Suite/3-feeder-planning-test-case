@@ -1,1 +1,1 @@
-# Placeholder to add read me for the grid models
+# Placeholder to add read me for overall grid models
