@@ -23,8 +23,11 @@ new line.fdr3_3_sec-fdr3_3_load         bus1=fdr3_3_sec.1.2.3   bus2=fdr3_3_load
 new line.fdr3_23_sec-fdr3_23_load       bus1=fdr3_23_sec.1.2.3  bus2=fdr3_23_load.1.2.3   geometry=UG_quadruplex_4/0            length=0.05 units=km 
 
 // lines with a tie-switch connection
-new line.fdr3_11-fdr3_11_sw             bus1=fdr3_11.1.2.3      bus2=fdr3_11_sw.1.2.3     geometry=OH_6_ACSR_3P                 length=0.2  units=km 
-new line.fdr3_4-fdr3_4_sw               bus1=fdr3_4.1.2.3       bus2=fdr3_4_sw.1.2.3      geometry=OH_6_ACSR_3P                 length=0.2  units=km 
+// within feeder 3
+new line.fdr3_4-fdr3_4_sw               bus1=fdr3_4.1.2.3       bus2=fdr3_4_sw.1.2.3      geometry=OH_6_ACSR_3P                 length=0.1  units=km 
+new line.fdr3_11-fdr3_11_sw             bus1=fdr3_11.1.2.3      bus2=fdr3_11_sw.1.2.3     geometry=OH_6_ACSR_3P                 length=0.1  units=km 
+// between feeder 3 and feeder 2
+new line.fdr3_12-fdr3_12_sw             bus1=fdr3_12.1.2.3      bus2=fdr3_12_sw.1.2.3     geometry=OH_6_ACSR_3P                 length=0.2  units=km 
 
 // very long extension of the 3-phase primary line
 new line.fdr3_11-fdr3_12_rec            bus1=fdr3_11.1.2.3      bus2=fdr3_12_rec.1.2.3    geometry=OH_6_ACSR_3P                 length=2.0  units=km 
