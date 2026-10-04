@@ -5,8 +5,8 @@
 
 clear
 
-New Circuit.three_feeder_planning_ckt_feeder2
-Edit Vsource.source bus=fdr2_bus_bar.1.2.3 pu=1.05 basekv=12.47 r1=1e-03 x1=1e-03 r0=1e-03 x0=1e-03 
+New Circuit.three_feeder_planning_ckt_feeder3
+Edit Vsource.source bus=fdr3_bus_bar.1.2.3 pu=1.05 basekv=12.47 r1=1e-05 x1=1e-5 r0=1e-05 x0=1e-05 
 
 // Redirect common line and transformer data files from the parent directory
 Redirect ../linecode.dss
@@ -35,7 +35,7 @@ Set VoltageBases=[138, 12.47, 0.480, 0.240, 0.208]
 Calcv
 
 // add energy meter at the substation head
-new energymeter.meter1 element=Line.fdr2_feeder_head_breaker 1
+new energymeter.meter1 element=Line.fdr3_feeder_head_breaker 1
 
 // although protection devices are defined, they do not work well in power flow settings where all control actions are assumed to be instantaneous
 // disable protection control elements in power flow
@@ -47,3 +47,6 @@ batchedit fuse..* enabled=N
 Set MaxControlIter=300
 Set MaxIter=300
 Solve
+
+// bus coordinates (bus, latitude, longitude); applied after Solve so they are not lost on bus re-processing
+LatLongCoords latlong.dss

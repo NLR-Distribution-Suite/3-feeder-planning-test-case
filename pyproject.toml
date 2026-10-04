@@ -1,0 +1,22 @@
+[project]
+name = "3-feeder-planning-test-case"
+description = "A distribution planning model with granual substation and feeder level details useful for grid modernization studies."
+version = "0.1.0"
+requires-python = ">=3.11"
+keywords = ['distribution planning', 'grid modernization', 'automated switching', 'grid resilience']
+authors = [
+  { name = "Abodh Poudyal", email = "abodh.poudyal@ieee.org" },
+  { name = "Wenbo Wang", email = "wwang@nlr.gov" },
+  { name = "Bryan Palmintier", email = "bpalmintier@nlr.gov" },
+]
+dependencies = [
+    "altdss[all]>=0.2.4",
+    "bokeh>=3.10.0",
+    "grid-data-models>=2.3.7",
+    "nrel-ditto>=0.1.5",
+]
+
+[project.urls]
+Documentation = "https://github.com/NLR-Distribution-Suite/3-feeder-planning-test-case#readme"
+Issues = "https://github.com/NLR-Distribution-Suite/3-feeder-planning-test-case/issues"
+Source = "https://github.com/NLR-Distribution-Suite/3-feeder-planning-test-case"

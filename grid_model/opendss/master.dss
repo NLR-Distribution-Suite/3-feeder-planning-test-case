@@ -78,3 +78,9 @@ batchedit fuse..* enabled=N
 Set MaxControlIter=300
 Set MaxIter=300
 Solve
+
+// bus coordinates (bus, latitude, longitude); applied after Solve so they are not lost on bus re-processing
+LatLongCoords latlong.dss
+LatLongCoords feeder_1/latlong.dss
+LatLongCoords feeder_2/latlong.dss
+LatLongCoords feeder_3/latlong.dss
