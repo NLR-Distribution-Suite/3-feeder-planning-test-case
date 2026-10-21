@@ -1,0 +1,81 @@
+load,feeder,base_kw,base_pf,shape,csv,minimum_pu,maximum_pu,annual_nominal_kwh,timing_conversion,source_building_ids
+fdr1_1_load,1,280.0,0.90,ls_fdr1_1_load,profiles/fdr1_1_load_pu.csv,0.009505510714285714,1.0,363423.786521,EST to MST: cyclic shift by -2 hours,72359
+fdr1_2_load,1,220.0,0.90,ls_fdr1_2_load,profiles/fdr1_2_load_pu.csv,0.047788709090909084,1.0,407885.95914600004,EST to MST: cyclic shift by -2 hours,11154
+fdr1_3_load,1,180.0,0.90,ls_fdr1_3_load,profiles/fdr1_3_load_pu.csv,0.03762885,1.0,312156.782173,EST to MST: cyclic shift by -2 hours,26476
+fdr1_9_load,1,80.0,0.90,ls_fdr1_9_load,profiles/fdr1_9_load_pu.csv,0.0171951125,1.0,203834.06381300004,EST to MST: cyclic shift by -2 hours,22457
+fdr1_4-1_load,1,10.0,0.95,ls_fdr1_4-1_load,profiles/fdr1_4-1_load_pu.csv,0.042331099999999997,1.0,9689.011252,EST to MST: cyclic shift by -2 hours,319272 119303
+fdr1_4-2_load,1,10.0,0.95,ls_fdr1_4-2_load,profiles/fdr1_4-2_load_pu.csv,0.051891299999999994,1.0,14457.175181000002,EST to MST: cyclic shift by -2 hours,366672 79470
+fdr1_5_load,1,12.0,0.95,ls_fdr1_5_load,profiles/fdr1_5_load_pu.csv,0.056867916666666664,1.0,20744.073341999996,EST to MST: cyclic shift by -2 hours,203884 138010
+fdr1_6_load1,1,15.0,0.95,ls_fdr1_6_load1,profiles/fdr1_6_load1_pu.csv,0.0952214,1.0,28110.282056,EST to MST: cyclic shift by -2 hours,289540 180813
+fdr1_6_load2,1,12.0,0.95,ls_fdr1_6_load2,profiles/fdr1_6_load2_pu.csv,0.039184000000000004,1.0,21512.755493,EST to MST: cyclic shift by -2 hours,265386 445484
+fdr1_8-1_load,1,12.0,0.95,ls_fdr1_8-1_load,profiles/fdr1_8-1_load_pu.csv,0.07073716666666667,1.0,19995.907146999998,EST to MST: cyclic shift by -2 hours,433693 66174
+fdr1_8-2_load,1,10.0,0.95,ls_fdr1_8-2_load,profiles/fdr1_8-2_load_pu.csv,0.0419313,1.0,21812.475907,EST to MST: cyclic shift by -2 hours,418186 358844
+fdr1_8-3_load,1,10.0,0.95,ls_fdr1_8-3_load,profiles/fdr1_8-3_load_pu.csv,0.0715595,1.0,21566.780751000002,EST to MST: cyclic shift by -2 hours,277568 195460
+fdr1_11-1_load,1,10.0,0.95,ls_fdr1_11-1_load,profiles/fdr1_11-1_load_pu.csv,0.0277885,1.0,9670.388854,EST to MST: cyclic shift by -2 hours,407263 32918
+fdr1_11-2_load,1,10.0,0.95,ls_fdr1_11-2_load,profiles/fdr1_11-2_load_pu.csv,0.0483223,1.0,10845.401589000001,EST to MST: cyclic shift by -2 hours,183891 252918
+fdr1_11-3_load,1,5.0,0.95,ls_fdr1_11-3_load,profiles/fdr1_11-3_load_pu.csv,0.0242424,1.0,4235.993839000001,EST to MST: cyclic shift by -2 hours,238314
+fdr1_11-4_load,1,5.0,0.95,ls_fdr1_11-4_load,profiles/fdr1_11-4_load_pu.csv,0.034289599999999996,1.0,4460.941468,EST to MST: cyclic shift by -2 hours,423638
+fdr1_13_load,1,8.0,0.95,ls_fdr1_13_load,profiles/fdr1_13_load_pu.csv,0.153030875,1.0,22909.158707,EST to MST: cyclic shift by -2 hours,149736
+fdr1_14-1_load,1,10.0,0.95,ls_fdr1_14-1_load,profiles/fdr1_14-1_load_pu.csv,0.0633686,1.0,16453.488029,EST to MST: cyclic shift by -2 hours,357162 144740
+fdr1_14-2_load,1,10.0,0.95,ls_fdr1_14-2_load,profiles/fdr1_14-2_load_pu.csv,0.0503145,1.0,16206.948135,EST to MST: cyclic shift by -2 hours,361883 207831
+fdr1_16_load,1,8.0,0.95,ls_fdr1_16_load,profiles/fdr1_16_load_pu.csv,0.030079,1.0,10792.380615,EST to MST: cyclic shift by -2 hours,65148
+fdr1_17_load,1,12.0,0.95,ls_fdr1_17_load,profiles/fdr1_17_load_pu.csv,0.061233,1.0,16110.451941000001,EST to MST: cyclic shift by -2 hours,300358 537275
+fdr1_18_load,1,8.0,0.95,ls_fdr1_18_load,profiles/fdr1_18_load_pu.csv,0.033893,1.0,11187.835459,EST to MST: cyclic shift by -2 hours,189238
+fdr1_19_load,1,8.0,0.95,ls_fdr1_19_load,profiles/fdr1_19_load_pu.csv,0.074990875,1.0,15417.569217,EST to MST: cyclic shift by -2 hours,375686
+fdr1_21_load,1,9.0,0.95,ls_fdr1_21_load,profiles/fdr1_21_load_pu.csv,0.04958588888888889,1.0,10860.137285999997,EST to MST: cyclic shift by -2 hours,262736 220967
+fdr1_22_load,1,12.0,0.95,ls_fdr1_22_load,profiles/fdr1_22_load_pu.csv,0.09637816666666667,1.0,22572.866902,EST to MST: cyclic shift by -2 hours,258537 526801
+fdr2_1_load,2,180.0,0.90,ls_fdr2_1_load,profiles/fdr2_1_load_pu.csv,0.010101155555555555,1.0,353983.169352,EST to MST: cyclic shift by -2 hours,39793
+fdr2_2_load,2,85.0,0.90,ls_fdr2_2_load,profiles/fdr2_2_load_pu.csv,0.21156250588235295,1.0,287791.445001,EST to MST: cyclic shift by -2 hours,636
+fdr2_3_load,2,80.0,0.90,ls_fdr2_3_load,profiles/fdr2_3_load_pu.csv,0.1849472,1.0,412170.618807,EST to MST: cyclic shift by -2 hours,43562
+fdr2_9_load,2,80.0,0.93,ls_fdr2_9_load,profiles/fdr2_9_load_pu.csv,0.1385086875,1.0,222898.275592,EST to MST: cyclic shift by -2 hours,3455
+fdr2_14-3_load,2,90.0,0.90,ls_fdr2_14-3_load,profiles/fdr2_14-3_load_pu.csv,0.06712148888888889,1.0,207121.18976199997,EST to MST: cyclic shift by -2 hours,369325 320522 210845 541902 471737 386947 340454 273923 419179 284776 317001 206067 126800 226608 145896
+fdr2_23_load,2,270.0,0.98,ls_fdr2_23_load,profiles/fdr2_23_load_pu.csv,0.2765798555829372,1.0,1350433.6738044312,EST to MST: cyclic shift by -2 hours; EV schedule retained in MST; grocery scaled to combined base peak,101147
+fdr2_4-1_load,2,15.0,0.95,ls_fdr2_4-1_load,profiles/fdr2_4-1_load_pu.csv,0.06694686666666666,1.0,34122.614058,EST to MST: cyclic shift by -2 hours,349558 105563
+fdr2_4-2_load,2,10.0,0.95,ls_fdr2_4-2_load,profiles/fdr2_4-2_load_pu.csv,0.0960866,1.0,21567.693311000003,EST to MST: cyclic shift by -2 hours,452991 1875
+fdr2_5_load,2,15.0,0.95,ls_fdr2_5_load,profiles/fdr2_5_load_pu.csv,0.09731519999999999,1.0,31174.992003,EST to MST: cyclic shift by -2 hours,448713 239615
+fdr2_6_load1,2,18.0,0.95,ls_fdr2_6_load1,profiles/fdr2_6_load1_pu.csv,0.05101572222222222,1.0,39221.396811,EST to MST: cyclic shift by -2 hours,79720 88256 488549
+fdr2_6_load2,2,18.0,0.95,ls_fdr2_6_load2,profiles/fdr2_6_load2_pu.csv,0.07713055555555555,1.0,37075.98003599999,EST to MST: cyclic shift by -2 hours,480983 333119 336137
+fdr2_8-1_load,2,23.0,0.95,ls_fdr2_8-1_load,profiles/fdr2_8-1_load_pu.csv,0.07799826086956521,1.0,43830.46258300001,EST to MST: cyclic shift by -2 hours,114540 93766 106510 338548
+fdr2_8-2_load,2,20.0,0.95,ls_fdr2_8-2_load,profiles/fdr2_8-2_load_pu.csv,0.0977325,1.0,37837.878675,EST to MST: cyclic shift by -2 hours,254727 189328 380678
+fdr2_8-3_load,2,18.0,0.95,ls_fdr2_8-3_load,profiles/fdr2_8-3_load_pu.csv,0.10555555555555556,1.0,43122.284528,EST to MST: cyclic shift by -2 hours,12914 351140 68517
+fdr2_11-1_load,2,12.0,0.95,ls_fdr2_11-1_load,profiles/fdr2_11-1_load_pu.csv,0.054359750000000005,1.0,14868.179762,EST to MST: cyclic shift by -2 hours,117422 359576
+fdr2_11-2_load,2,12.0,0.95,ls_fdr2_11-2_load,profiles/fdr2_11-2_load_pu.csv,0.07575683333333333,1.0,20555.456978,EST to MST: cyclic shift by -2 hours,291905 198642
+fdr2_11-3_load,2,8.0,0.95,ls_fdr2_11-3_load,profiles/fdr2_11-3_load_pu.csv,0.045387875,1.0,10852.883821,EST to MST: cyclic shift by -2 hours,252328
+fdr2_11-4_load,2,10.0,0.95,ls_fdr2_11-4_load,profiles/fdr2_11-4_load_pu.csv,0.0437346,1.0,13517.769618,EST to MST: cyclic shift by -2 hours,320790 13222
+fdr2_13_load,2,8.0,0.95,ls_fdr2_13_load,profiles/fdr2_13_load_pu.csv,0.079547625,1.0,13199.314414,EST to MST: cyclic shift by -2 hours,252681
+fdr2_14-1_load,2,6.0,0.95,ls_fdr2_14-1_load,profiles/fdr2_14-1_load_pu.csv,0.04272616666666667,1.0,5590.564731,EST to MST: cyclic shift by -2 hours,95667
+fdr2_14-2_load,2,9.0,0.95,ls_fdr2_14-2_load,profiles/fdr2_14-2_load_pu.csv,0.07816722222222222,1.0,17144.642695,EST to MST: cyclic shift by -2 hours,307096 470751
+fdr2_16_load,2,18.0,0.95,ls_fdr2_16_load,profiles/fdr2_16_load_pu.csv,0.05609522222222222,1.0,41395.784344,EST to MST: cyclic shift by -2 hours,262694 449404 389405
+fdr2_17_load,2,12.0,0.95,ls_fdr2_17_load,profiles/fdr2_17_load_pu.csv,0.035013916666666665,1.0,16250.354414000001,EST to MST: cyclic shift by -2 hours,363158 186476
+fdr2_18_load,2,10.0,0.95,ls_fdr2_18_load,profiles/fdr2_18_load_pu.csv,0.0254546,1.0,12685.022334999998,EST to MST: cyclic shift by -2 hours,424334 406397
+fdr2_19_load,2,8.0,0.95,ls_fdr2_19_load,profiles/fdr2_19_load_pu.csv,0.090024125,1.0,15405.664638000002,EST to MST: cyclic shift by -2 hours,255178
+fdr2_21_load,2,9.0,0.95,ls_fdr2_21_load,profiles/fdr2_21_load_pu.csv,0.060178777777777775,1.0,11518.93572,EST to MST: cyclic shift by -2 hours,448818 527137
+fdr2_22_load,2,12.0,0.95,ls_fdr2_22_load,profiles/fdr2_22_load_pu.csv,0.13717416666666668,1.0,29695.959161999996,EST to MST: cyclic shift by -2 hours,450769 142543
+fdr3_1_load,3,230.0,0.9,ls_fdr3_1_load,profiles/fdr3_1_load_pu.csv,0.05003758695652174,1.0,450144.31891499995,EST to MST: cyclic shift by -2 hours,60687
+fdr3_2_load,3,84.0,0.9,ls_fdr3_2_load,profiles/fdr3_2_load_pu.csv,0.08162496428571428,1.0,174141.16159499998,EST to MST: cyclic shift by -2 hours,9960
+fdr3_3_load,3,93.0,0.9,ls_fdr3_3_load,profiles/fdr3_3_load_pu.csv,0.13087460215053764,1.0,265351.82498300006,EST to MST: cyclic shift by -2 hours,52018
+fdr3_23_load,3,220.0,0.9,ls_fdr3_23_load,profiles/fdr3_23_load_pu.csv,0.006528306238092792,1.0,232081.10104123087,"EST to MST: cyclic shift by -2 hours; seasonal schedule reapplied in MST, peak scaled to base kW",19074
+fdr3_4-1_load,3,18.0,0.95,ls_fdr3_4-1_load,profiles/fdr3_4-1_load_pu.csv,0.12211283333333332,1.0,39997.572755,EST to MST: cyclic shift by -2 hours,107831 291723 455031
+fdr3_4-2_load,3,12.0,0.95,ls_fdr3_4-2_load,profiles/fdr3_4-2_load_pu.csv,0.08780608333333334,1.0,23152.237908,EST to MST: cyclic shift by -2 hours,394491 415242
+fdr3_5_load,3,15.0,0.95,ls_fdr3_5_load,profiles/fdr3_5_load_pu.csv,0.0561032,1.0,23701.566534999998,EST to MST: cyclic shift by -2 hours,424231 496811
+fdr3_6_load1,3,18.0,0.95,ls_fdr3_6_load1,profiles/fdr3_6_load1_pu.csv,0.031221388888888885,1.0,32424.219129,EST to MST: cyclic shift by -2 hours,155573 193775 234914
+fdr3_6_load2,3,22.0,0.95,ls_fdr3_6_load2,profiles/fdr3_6_load2_pu.csv,0.09370795454545454,1.0,48547.869391,EST to MST: cyclic shift by -2 hours,477692 169022 272029 439156
+fdr3_8-1_load,3,23.0,0.95,ls_fdr3_8-1_load,profiles/fdr3_8-1_load_pu.csv,0.07003126086956522,1.0,42471.503107,EST to MST: cyclic shift by -2 hours,386871 239054 277136 345070
+fdr3_8-2_load,3,20.0,0.95,ls_fdr3_8-2_load,profiles/fdr3_8-2_load_pu.csv,0.0390199,1.0,27184.971729999997,EST to MST: cyclic shift by -2 hours,108238 95661 539314
+fdr3_8-3_load,3,18.0,0.95,ls_fdr3_8-3_load,profiles/fdr3_8-3_load_pu.csv,0.02453322222222222,1.0,27419.650285999996,EST to MST: cyclic shift by -2 hours,412191 115993 235636
+fdr3_11-1_load,3,12.0,0.95,ls_fdr3_11-1_load,profiles/fdr3_11-1_load_pu.csv,0.04561883333333333,1.0,16974.579618,EST to MST: cyclic shift by -2 hours,480712 396286
+fdr3_11-2_load,3,12.0,0.95,ls_fdr3_11-2_load,profiles/fdr3_11-2_load_pu.csv,0.057271416666666665,1.0,27946.656941,EST to MST: cyclic shift by -2 hours,315353 362272
+fdr3_11-3_load,3,8.0,0.95,ls_fdr3_11-3_load,profiles/fdr3_11-3_load_pu.csv,0.036515375,1.0,12489.529789,EST to MST: cyclic shift by -2 hours,391136
+fdr3_11-4_load,3,10.0,0.95,ls_fdr3_11-4_load,profiles/fdr3_11-4_load_pu.csv,0.029389500000000002,1.0,21331.177997,EST to MST: cyclic shift by -2 hours,489839 383863
+fdr3_13_load,3,8.0,0.95,ls_fdr3_13_load,profiles/fdr3_13_load_pu.csv,0.055149125,1.0,10096.281148,EST to MST: cyclic shift by -2 hours,22116
+fdr3_14-1_load,3,10.0,0.95,ls_fdr3_14-1_load,profiles/fdr3_14-1_load_pu.csv,0.0445609,1.0,19648.790532,EST to MST: cyclic shift by -2 hours,249348 320887
+fdr3_14-2_load,3,10.0,0.95,ls_fdr3_14-2_load,profiles/fdr3_14-2_load_pu.csv,0.0668727,1.0,14558.523636,EST to MST: cyclic shift by -2 hours,48615 60622
+fdr3_16_load,3,20.0,0.95,ls_fdr3_16_load,profiles/fdr3_16_load_pu.csv,0.07861295,1.0,34682.323134,EST to MST: cyclic shift by -2 hours,512977 485638 923
+fdr3_17_load,3,12.0,0.95,ls_fdr3_17_load,profiles/fdr3_17_load_pu.csv,0.11477391666666666,1.0,24778.646887000003,EST to MST: cyclic shift by -2 hours,138816 311824
+fdr3_18_load,3,10.0,0.95,ls_fdr3_18_load,profiles/fdr3_18_load_pu.csv,0.0914551,1.0,20320.485607,EST to MST: cyclic shift by -2 hours,45720 311425
+fdr3_19_load,3,8.0,0.95,ls_fdr3_19_load,profiles/fdr3_19_load_pu.csv,0.064628,1.0,14687.351607,EST to MST: cyclic shift by -2 hours,155299
+fdr3_21_load,3,9.0,0.95,ls_fdr3_21_load,profiles/fdr3_21_load_pu.csv,0.06913022222222222,1.0,14014.270947,EST to MST: cyclic shift by -2 hours,538373 18790
+fdr3_22_load,3,12.0,0.95,ls_fdr3_22_load,profiles/fdr3_22_load_pu.csv,0.06371283333333333,1.0,20591.803198,EST to MST: cyclic shift by -2 hours,341805 64540
+fdr3_9-1_load,3,25.0,0.95,ls_fdr3_9-1_load,profiles/fdr3_9-1_load_pu.csv,0.04885779999999999,1.0,59571.775252,EST to MST: cyclic shift by -2 hours,291858 113720 363901 206620
+fdr3_9-2_load,3,20.0,0.95,ls_fdr3_9-2_load,profiles/fdr3_9-2_load_pu.csv,0.07006135,1.0,37501.786647999994,EST to MST: cyclic shift by -2 hours,8180 183560 498506
+fdr3_9-3_load,3,23.0,0.95,ls_fdr3_9-3_load,profiles/fdr3_9-3_load_pu.csv,0.09096000000000001,1.0,42212.411163,EST to MST: cyclic shift by -2 hours,164194 204038 151017 114789

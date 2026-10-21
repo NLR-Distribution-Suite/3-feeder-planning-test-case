@@ -1,0 +1,23 @@
+
+// voltage support capacitor at node 11
+New Capacitor.fdr2_11_volt_support_cap bus1=fdr2_11.1.2.3 phases=3 kV=12.47 kVAR=300 numsteps=3 states=[0 0 0]
+New CapControl.fdr2_11_volt_support_cap_control element=Line.fdr2_11_fdr2_11_sec_sw terminal=1 capacitor=fdr2_11_volt_support_cap
+~ type=voltage ptratio=60 ptphase=max onsetting=120 offsetting=125 eventlog=y
+
+
+// power factor correction for 3-phase loads to maintain pf within a range of 0.98 lagging to 0.98 leading 
+New Capacitor.fdr2_load1_cap bus1=fdr2_1_load.1.2.3 phases=3 kV=0.48 kVAR=100 numsteps=3 states=[0 0 0]
+New CapControl.fdr2_load1_cap_control element=Line.fdr2_1_sec-fdr2_1_load terminal=1 capacitor=fdr2_load1_cap
+~ type=PF onsetting=0.98 offsetting=-0.98
+
+New Capacitor.fdr2_load2_cap bus1=fdr2_2_load.1.2.3 phases=3 kV=0.48 kVAR=50 numsteps=2 states=[0 0]
+New CapControl.fdr2_load2_cap_control element=Line.fdr2_2_sec-fdr2_2_load terminal=1 capacitor=fdr2_load2_cap
+~ type=PF onsetting=0.98 offsetting=-0.98
+
+New Capacitor.fdr2_load3_cap bus1=fdr2_3_load.1.2.3 phases=3 kV=0.48 kVAR=50 numsteps=2 states=[0 0]
+New CapControl.fdr2_load3_cap_control element=Line.fdr2_3_sec-fdr2_3_load terminal=1 capacitor=fdr2_load3_cap
+~ type=PF onsetting=0.98 offsetting=-0.98
+
+New Capacitor.fdr2_load23_cap bus1=fdr2_23_load.1.2.3 phases=3 kV=0.48 kVAR=100 numsteps=3 states=[0 0 0]
+New CapControl.fdr2_load23_cap_control element=Line.fdr2_23_sec-fdr2_23_load terminal=1 capacitor=fdr2_load23_cap
+~ type=PF onsetting=0.98 offsetting=-0.98

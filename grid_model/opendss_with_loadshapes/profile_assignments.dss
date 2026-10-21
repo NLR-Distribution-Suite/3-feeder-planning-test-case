@@ -1,0 +1,91 @@
+Edit Load.fdr1_1_load yearly=ls_fdr1_1_load status=variable
+Edit Load.fdr1_2_load yearly=ls_fdr1_2_load status=variable
+Edit Load.fdr1_3_load yearly=ls_fdr1_3_load status=variable
+Edit Load.fdr1_9_load yearly=ls_fdr1_9_load status=variable
+Edit Load.fdr1_4-1_load yearly=ls_fdr1_4-1_load status=variable
+Edit Load.fdr1_4-2_load yearly=ls_fdr1_4-2_load status=variable
+Edit Load.fdr1_5_load yearly=ls_fdr1_5_load status=variable
+Edit Load.fdr1_6_load1 yearly=ls_fdr1_6_load1 status=variable
+Edit Load.fdr1_6_load2 yearly=ls_fdr1_6_load2 status=variable
+Edit Load.fdr1_8-1_load yearly=ls_fdr1_8-1_load status=variable
+Edit Load.fdr1_8-2_load yearly=ls_fdr1_8-2_load status=variable
+Edit Load.fdr1_8-3_load yearly=ls_fdr1_8-3_load status=variable
+Edit Load.fdr1_11-1_load yearly=ls_fdr1_11-1_load status=variable
+Edit Load.fdr1_11-2_load yearly=ls_fdr1_11-2_load status=variable
+Edit Load.fdr1_11-3_load yearly=ls_fdr1_11-3_load status=variable
+Edit Load.fdr1_11-4_load yearly=ls_fdr1_11-4_load status=variable
+Edit Load.fdr1_13_load yearly=ls_fdr1_13_load status=variable
+Edit Load.fdr1_14-1_load yearly=ls_fdr1_14-1_load status=variable
+Edit Load.fdr1_14-2_load yearly=ls_fdr1_14-2_load status=variable
+Edit Load.fdr1_16_load yearly=ls_fdr1_16_load status=variable
+Edit Load.fdr1_17_load yearly=ls_fdr1_17_load status=variable
+Edit Load.fdr1_18_load yearly=ls_fdr1_18_load status=variable
+Edit Load.fdr1_19_load yearly=ls_fdr1_19_load status=variable
+Edit Load.fdr1_21_load yearly=ls_fdr1_21_load status=variable
+Edit Load.fdr1_22_load yearly=ls_fdr1_22_load status=variable
+Edit Load.fdr2_1_load yearly=ls_fdr2_1_load status=variable
+Edit Load.fdr2_2_load yearly=ls_fdr2_2_load status=variable
+Edit Load.fdr2_3_load yearly=ls_fdr2_3_load status=variable
+Edit Load.fdr2_9_load yearly=ls_fdr2_9_load status=variable
+Edit Load.fdr2_14-3_load yearly=ls_fdr2_14-3_load status=variable
+Edit Load.fdr2_23_load yearly=ls_fdr2_23_load status=variable
+Edit Load.fdr2_4-1_load yearly=ls_fdr2_4-1_load status=variable
+Edit Load.fdr2_4-2_load yearly=ls_fdr2_4-2_load status=variable
+Edit Load.fdr2_5_load yearly=ls_fdr2_5_load status=variable
+Edit Load.fdr2_6_load1 yearly=ls_fdr2_6_load1 status=variable
+Edit Load.fdr2_6_load2 yearly=ls_fdr2_6_load2 status=variable
+Edit Load.fdr2_8-1_load yearly=ls_fdr2_8-1_load status=variable
+Edit Load.fdr2_8-2_load yearly=ls_fdr2_8-2_load status=variable
+Edit Load.fdr2_8-3_load yearly=ls_fdr2_8-3_load status=variable
+Edit Load.fdr2_11-1_load yearly=ls_fdr2_11-1_load status=variable
+Edit Load.fdr2_11-2_load yearly=ls_fdr2_11-2_load status=variable
+Edit Load.fdr2_11-3_load yearly=ls_fdr2_11-3_load status=variable
+Edit Load.fdr2_11-4_load yearly=ls_fdr2_11-4_load status=variable
+Edit Load.fdr2_13_load yearly=ls_fdr2_13_load status=variable
+Edit Load.fdr2_14-1_load yearly=ls_fdr2_14-1_load status=variable
+Edit Load.fdr2_14-2_load yearly=ls_fdr2_14-2_load status=variable
+Edit Load.fdr2_16_load yearly=ls_fdr2_16_load status=variable
+Edit Load.fdr2_17_load yearly=ls_fdr2_17_load status=variable
+Edit Load.fdr2_18_load yearly=ls_fdr2_18_load status=variable
+Edit Load.fdr2_19_load yearly=ls_fdr2_19_load status=variable
+Edit Load.fdr2_21_load yearly=ls_fdr2_21_load status=variable
+Edit Load.fdr2_22_load yearly=ls_fdr2_22_load status=variable
+Edit Load.fdr3_1_load yearly=ls_fdr3_1_load status=variable
+Edit Load.fdr3_2_load yearly=ls_fdr3_2_load status=variable
+Edit Load.fdr3_3_load yearly=ls_fdr3_3_load status=variable
+Edit Load.fdr3_23_load yearly=ls_fdr3_23_load status=variable
+Edit Load.fdr3_4-1_load yearly=ls_fdr3_4-1_load status=variable
+Edit Load.fdr3_4-2_load yearly=ls_fdr3_4-2_load status=variable
+Edit Load.fdr3_5_load yearly=ls_fdr3_5_load status=variable
+Edit Load.fdr3_6_load1 yearly=ls_fdr3_6_load1 status=variable
+Edit Load.fdr3_6_load2 yearly=ls_fdr3_6_load2 status=variable
+Edit Load.fdr3_8-1_load yearly=ls_fdr3_8-1_load status=variable
+Edit Load.fdr3_8-2_load yearly=ls_fdr3_8-2_load status=variable
+Edit Load.fdr3_8-3_load yearly=ls_fdr3_8-3_load status=variable
+Edit Load.fdr3_11-1_load yearly=ls_fdr3_11-1_load status=variable
+Edit Load.fdr3_11-2_load yearly=ls_fdr3_11-2_load status=variable
+Edit Load.fdr3_11-3_load yearly=ls_fdr3_11-3_load status=variable
+Edit Load.fdr3_11-4_load yearly=ls_fdr3_11-4_load status=variable
+Edit Load.fdr3_13_load yearly=ls_fdr3_13_load status=variable
+Edit Load.fdr3_14-1_load yearly=ls_fdr3_14-1_load status=variable
+Edit Load.fdr3_14-2_load yearly=ls_fdr3_14-2_load status=variable
+Edit Load.fdr3_16_load yearly=ls_fdr3_16_load status=variable
+Edit Load.fdr3_17_load yearly=ls_fdr3_17_load status=variable
+Edit Load.fdr3_18_load yearly=ls_fdr3_18_load status=variable
+Edit Load.fdr3_19_load yearly=ls_fdr3_19_load status=variable
+Edit Load.fdr3_21_load yearly=ls_fdr3_21_load status=variable
+Edit Load.fdr3_22_load yearly=ls_fdr3_22_load status=variable
+Edit Load.fdr3_9-1_load yearly=ls_fdr3_9-1_load status=variable
+Edit Load.fdr3_9-2_load yearly=ls_fdr3_9-2_load status=variable
+Edit Load.fdr3_9-3_load yearly=ls_fdr3_9-3_load status=variable
+Edit PVSystem.fdr2_6-2_PV irradiance=1 yearly=pv_golden_irradiance Tyearly=pv_golden_temperature pf=1
+Edit PVSystem.fdr2_8-1_PV irradiance=1 yearly=pv_golden_irradiance Tyearly=pv_golden_temperature pf=1
+Edit PVSystem.fdr2_14-1_PV irradiance=1 yearly=pv_golden_irradiance Tyearly=pv_golden_temperature pf=1
+Edit PVSystem.fdr2_21_PV irradiance=1 yearly=pv_golden_irradiance Tyearly=pv_golden_temperature pf=1
+Edit PVSystem.fdr3_6-1_PV irradiance=1 yearly=pv_golden_irradiance Tyearly=pv_golden_temperature pf=1
+Edit PVSystem.fdr3_8-1_PV irradiance=1 yearly=pv_golden_irradiance Tyearly=pv_golden_temperature pf=1
+Edit PVSystem.fdr3_8-2_PV irradiance=1 yearly=pv_golden_irradiance Tyearly=pv_golden_temperature pf=1
+Edit PVSystem.fdr3_11-4_PV irradiance=1 yearly=pv_golden_irradiance Tyearly=pv_golden_temperature pf=1
+Edit PVSystem.fdr3_13_PV irradiance=1 yearly=pv_golden_irradiance Tyearly=pv_golden_temperature pf=1
+Edit PVSystem.fdr3_14-2_PV irradiance=1 yearly=pv_golden_irradiance Tyearly=pv_golden_temperature pf=1
+Edit PVSystem.fdr3_22_PV irradiance=1 yearly=pv_golden_irradiance Tyearly=pv_golden_temperature pf=1

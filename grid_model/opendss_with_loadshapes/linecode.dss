@@ -1,0 +1,2 @@
+// Linecode for switches
+New Linecode.switch nphases=3 R1=1e-5 X1=1e-5 R0=1e-5 X0=1e-5 units=kft

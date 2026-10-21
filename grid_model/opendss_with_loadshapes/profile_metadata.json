@@ -1,0 +1,160 @@
+{
+  "config": {
+    "state": "CO",
+    "county": "G0800590",
+    "seed": 20260908,
+    "commercial_type_overrides": {
+      "fdr1_1_load": "PrimarySchool",
+      "fdr1_2_load": "MediumOffice",
+      "fdr1_3_load": "SecondarySchool",
+      "fdr1_9_load": "SmallOffice",
+      "fdr2_1_load": "PrimarySchool",
+      "fdr2_2_load": "Warehouse",
+      "fdr2_3_load": "SmallHotel",
+      "fdr2_9_load": "RetailStripmall",
+      "fdr2_14-3_load": "Warehouse",
+      "fdr2_23_load": "Grocery",
+      "fdr3_1_load": "PrimarySchool",
+      "fdr3_2_load": "RetailStripmall",
+      "fdr3_3_load": "MediumOffice",
+      "fdr3_23_load": "Warehouse"
+    },
+    "commercial_type_note": "fdr3_23_load is a seasonal Warehouse processing proxy; fdr2_23_load is Grocery plus synthetic EV; residential_proxies supersedes the legacy commercial assignment for fdr2_14-3_load (apartments). Other types are retained assumptions.",
+    "seasonal_proxies": {
+      "fdr3_23_load": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "weekdays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "start_hour": 6,
+        "end_hour": 18,
+        "background_fraction": 0.05,
+        "description": "Synthetic agricultural processing: ComStock Warehouse background plus September-November processing, Monday-Saturday 06:00-18:00; combined peak scaled to DSS kW."
+      }
+    },
+    "residential_proxies": {
+      "fdr2_14-3_load": {
+        "building_type": "Multi-Family with 5+ Units",
+        "n_units": 15,
+        "seed": 20261004,
+        "description": "User-confirmed apartments; 15 sampled dwelling-unit profiles are an assumption, aggregated and peak-scaled to 90 kW."
+      }
+    },
+    "ev_proxies": {
+      "fdr2_23_load": {
+        "charger_count": 4,
+        "charger_kw": 7.2,
+        "sessions_per_day": 16,
+        "session_hours": 1,
+        "opening_hour": 8,
+        "closing_hour": 22,
+        "seed": 20261004,
+        "description": "Synthetic public Level 2 charging: Poisson daily arrivals, uniformly assigned to hourly shopping slots, one hour per session; arrivals exceeding four concurrent ports are unserved. Grocery scaled so combined peak remains 270 kW."
+      }
+    },
+    "pvwatts": {
+      "lat": 39.733917,
+      "lon": -105.20287,
+      "module_type": 0,
+      "array_type": 1,
+      "tilt": 30,
+      "azimuth": 180,
+      "losses": 14,
+      "inv_eff": 96,
+      "dataset": "nsrdb",
+      "timeframe": "hourly"
+    },
+    "scenario": "golden_jefferson_county",
+    "load_geography": "Jefferson County regional proxy for Golden (G0800590); not city-specific or measured customer data"
+  },
+  "hours": 8760,
+  "interval_hours": 1,
+  "timezone": "MST UTC-07:00",
+  "time_convention": "hour-ending; first row Jan 1 00:00-01:00; last row Dec 31 23:00-24:00",
+  "source_timezone_reference": "https://natlabrockies.github.io/ComStock.github.io/docs/faq.html",
+  "pv_request": {
+    "lat": 39.733917,
+    "lon": -105.20287,
+    "module_type": 0,
+    "array_type": 1,
+    "tilt": 30,
+    "azimuth": 180,
+    "losses": 14,
+    "inv_eff": 96,
+    "dataset": "nsrdb",
+    "timeframe": "hourly",
+    "system_capacity": 1.0,
+    "dc_ac_ratio": 1.0
+  },
+  "pv_station": {
+    "lat": 39.72999954223633,
+    "lon": -105.2200012207031,
+    "elev": 1933.5,
+    "tz": -7.0,
+    "location": "145808",
+    "city": "",
+    "state": "Colorado",
+    "country": "United States",
+    "solar_resource_file": "145808.csv",
+    "distance": 1519,
+    "weather_data_source": "NSRDB PSM V3 GOES tmy-2020 3.2.0"
+  },
+  "pv_cache": "pvwatts_v8_4e164b81f478cd3f.json",
+  "source_model_sha256": {
+    "latlong.dss": "0d7185be65454ad86b6b651a22b8255bdcbe1e979df980ee5c4968a334a9c99b",
+    "linecode.dss": "50126058a1d1c477222e24c30e9508b251454f738e07f1859190d51b3c40540e",
+    "linegeometry.dss": "36e05f11909c609f4d21635854051b5e9f7b88c32fdf98438b35bc5008e3613f",
+    "master.dss": "efbb0d5829a87647dd81a15ca7df4e2cdb78f38ec01fcdde3e44168763f4df02",
+    "substation.dss": "1a725c18dbec0d478947caceef5c325162439e0645d02d4e7c0f2eda10853f5f",
+    "tcccurves.dss": "97580c73bdb4ac800d53e1db83ba1090961a7865a2e1f970f6d8995e987851f9",
+    "tieswitch.dss": "51bee111c424ace2e9d1d239911094d1324d20b522944fc0189d128ccdcd613b",
+    "wiredata.dss": "4c04a09bec156860a57937398b8d94dc815c6d00966038233f4de62540280841",
+    "xfmrcode.dss": "84208eb533352f0ce308dabe263b2dc61890b4c3e659466205a835d8cc642213",
+    "xycurves.dss": "4ad828ef69b96cc848e90bb6711c461ac7ca468efa5d1cf3d2a7609605f68303",
+    "feeder_1\\breaker.dss": "a8ffdebb29313e07f37cb937366505922c6bb14c09b0b11cf64d8a773fce28d0",
+    "feeder_1\\capacitor.dss": "1e764da47226a8e9b55f27e7c68f0f939ad338d8e1df4916680285def5003054",
+    "feeder_1\\fuse.dss": "c6910eacbe53aa7fa8ef0fdb377c55321ca7645009f7941fab23b8d0ea30201f",
+    "feeder_1\\latlong.dss": "c085c9a2ef9511fde27db5cd4df30eecb84e933998d5b274a4f40c2e458df14a",
+    "feeder_1\\lines.dss": "b4e43a9623ab0d1f9d761d21302bb0c34b473085144bd04dd600c28b82ce1ee1",
+    "feeder_1\\loads.dss": "17a2a6458231383bfd163ff64f8b9179ce0bfbdde7c97e584e083b3f458cd89f",
+    "feeder_1\\master.dss": "02af0277b60ce41e1c9b825aa34b358cd644c6e12e0016348ed6b7070617c6db",
+    "feeder_1\\normallyclosedswitches.dss": "cc46096dfa4a956fef86d19ca9b73e0dc44f9be1aa39b5cb4d7389fbcb389f32",
+    "feeder_1\\normallyopenswitches.dss": "aeb5313462b2c24ce4d2b54dbeac664ee42b7ada5c7c7e8cf18f2009bff376ea",
+    "feeder_1\\recloser.dss": "37b7fd2138e0bc0fe3d5d7397db429ccd99b6a1c15f745d67876e7660d2d188d",
+    "feeder_1\\regulator.dss": "064cd27d5faa5cc700e5dcd1cc048cee0decf2a5a90b63e4263510dc5aae2c5c",
+    "feeder_1\\transformers.dss": "0607f6b665f55b61f9fbca00894c54690fa6e833fbd29cbfdde1de79a4ea67c5",
+    "feeder_2\\breaker.dss": "6d4b1b740823418c54c46498a8718b7eb46739e5b414142ad42a0dc0ee415a94",
+    "feeder_2\\btm_pv.dss": "954fd493486666095537ea3c21115183d00c381ac13ee7604d615919bf046092",
+    "feeder_2\\capacitor.dss": "311a2bb2c029321429a4f95a866662de922f2edc6d641f986765e4719bc1d402",
+    "feeder_2\\fuse.dss": "f2b55531ea4c5a21842b856c95cfa72c229080c026a6f840b676d4ef27eb61ea",
+    "feeder_2\\latlong.dss": "10222174e6aa1249884ee358f869869bb5bc2d9719595f7fac07c7e655a797df",
+    "feeder_2\\lines.dss": "3e28c9b1cb2b2ed69c7554be10129c6ec3f36868376c48ad09a8e5498c5e8594",
+    "feeder_2\\loads.dss": "320c70b780d0ed19a57ccac53bd08759d4b45ffb667903bc0218be4136e8941d",
+    "feeder_2\\master.dss": "415c39c49b89e97e709fb9f94cae652a57a2d9dba04da6120fcbba9cd3411314",
+    "feeder_2\\normallyclosedswitches.dss": "89f1ce73e2e4b4da929de77cde2cff4a7fcca44d2384cc842fe0d20ff384427f",
+    "feeder_2\\normallyopenswitches.dss": "a228bf43d11782d1da43fbf6ad9274a37eb26c661c2b8ea4c2a2ba699e90dbbf",
+    "feeder_2\\recloser.dss": "9f05706637d1aa2922e6fe249b490b9b004d16e7b9af190044bdd755a6442e93",
+    "feeder_2\\transformers.dss": "73f4ec3db06f85635cb0a6eb4ca918fe9dd2c74bca306278cdf45596cfdaab1a",
+    "feeder_3\\breaker.dss": "3acb788bcf70e1f9f0fe04bc5fb62f09b2e0ddd925e4ebfc8b8547da5e01c9f9",
+    "feeder_3\\btm_pv.dss": "48da61ca5688f19cb79a62719b1dd8b92157430946894ca96c8844cd1e0b1fc2",
+    "feeder_3\\capacitor.dss": "e3a23163962be7bc58c63a21dfc0976e389d36426fe7043ab1216c5139775eaa",
+    "feeder_3\\fuse.dss": "9410dfc3101a7e538bd9ebdbc500b047ba18e7edbc0e3d970916cbb6c76b6337",
+    "feeder_3\\latlong.dss": "f3d3d34914f5cdcac00b6a8619b0b068bd1bccdf4ed059303a98c3eb735ab2bc",
+    "feeder_3\\lines.dss": "7ad7e0be9801ffcb459b3c4d2df2e1a664dd00ffb7bd402ed79c4951b1dadfbe",
+    "feeder_3\\loads.dss": "f13b2ffb1cd9d3799fba0ae4f6c77eb0fa98ea350b00669e20d1476a5d529cf2",
+    "feeder_3\\master.dss": "107d293385bf42cd2fb732a150e5d196ca63d01b58d3638e03385d06b7f6e3c6",
+    "feeder_3\\normallyclosedswitches.dss": "9572f0cfa1fa72d7f859573f94a731ba46987e272e630e5856091dbaf6b2c310",
+    "feeder_3\\normallyopenswitches.dss": "e35312d54a2265906c84d0e02d082b4f7cb79e74fc2de862826e2761f3be28e6",
+    "feeder_3\\recloser.dss": "669973a78b0431f1d45a01b9210fefba29f237cda7eb40ba0aee12d86881ea4e",
+    "feeder_3\\transformers.dss": "d270a6b4357f3ccee750d9c2fee7bd63963d082345af661c66a965a92158157e"
+  }
+}

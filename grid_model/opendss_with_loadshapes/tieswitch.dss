@@ -1,0 +1,7 @@
+// Normally open tie switches between feeders
+
+new line.fdr3_12_sw_fdr2_12_sw bus1=fdr3_12_sw.1.2.3 bus2=fdr2_12_sw.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_DISC switch=true Phases=3
+New SwtControl.fdr3_12_sw_fdr2_12_sw_control SwitchedObj=Line.fdr3_12_sw_fdr2_12_sw SwitchedTerm=1 Normal=Open State=Open
+
+new line.fdr2_4_sw-2_fdr1_11_sw-2 bus1=fdr2_4_sw-2.1.2.3 bus2=fdr1_11_sw-2.1.2.3  linecode=switch length=1e-3 units=kft linetype=SWT_DISC switch=true Phases=3
+New SwtControl.fdr2_4_sw-2_fdr1_11_sw-2_control SwitchedObj=Line.fdr2_4_sw-2_fdr1_11_sw-2 SwitchedTerm=1 Normal=Open State=Open

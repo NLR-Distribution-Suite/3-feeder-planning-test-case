@@ -1,0 +1,13 @@
+Two-layer QGIS export: three_feeder_nodes_edges.gpkg
+nodes: one bus per feature; electrical phase numbers in nodes attribute.
+Loads, PV, capacitors and source equipment are attached to their bus.
+edges: lines, switches and transformer connections, distinguished by edge_type.
+Protection, controls, meters and monitors are attached to their referenced equipment.
+equipment_json contains full definitions; searchable columns contain equipment
+names, counts, load kW/kvar, PV ratings, capacitor kvar, and edge electrical data.
+Transformer multiwinding connections share the same asset identifier and equipment
+attributes if more than one distinct secondary bus exists; do not sum duplicated
+nameplate ratings across such branches. Connections are not additional wires.
+CRS EPSG:4326; fictitious feeder layout around the Golden geographic anchor.
+Original OpenDSS files are unchanged. Source is the existing loadshape-package
+GIS export, including the added substation_power monitor.

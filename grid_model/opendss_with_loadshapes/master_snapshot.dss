@@ -1,0 +1,86 @@
+/* ############################# 3-feeder Planning test case #####################################*/
+/* Developed By: Abodh Poudyal and Bryan Palmintier*/
+/* Grid Planning and Analysis Center*/
+/* National Laboratory of the Rockies*/
+
+Clear
+
+// modeled as an ideal voltage source connecting a 138 kV transmission system to a 12.47 kV distribution substation
+// 138 kV is directly stepped down to 12.47 kV at the substation which is the primary voltage level for the distribution feeders
+New Circuit.three_feeder_planning_ckt 
+Edit Vsource.source bus=source_.1.2.3 pu=1 basekv=138 r1=1e-05 x1=1e-5 r0=1e-05 x0=1e-05 
+New Line.source_connector bus1=source_.1.2.3 bus2=source.1.2.3 length = 1e-3 units=kft 
+~ r1=1e-03 x1=1e-3 r0=1e-03 x0=1e-03 c1=0 c0=0 phases=3
+
+// Redirect common line and transformer data files
+Redirect linecode.dss
+Redirect wiredata.dss
+Redirect linegeometry.dss
+Redirect tcccurves.dss
+Redirect xfmrcode.dss
+Redirect xycurves.dss
+Redirect substation.dss
+
+// feeder 1 files
+Redirect feeder_1/breaker.dss
+Redirect feeder_1/recloser.dss
+Redirect feeder_1/fuse.dss
+Redirect feeder_1/normallyclosedswitches.dss
+Redirect feeder_1/normallyopenswitches.dss
+Redirect feeder_1/regulator.dss
+Redirect feeder_1/lines.dss
+Redirect feeder_1/transformers.dss
+Redirect feeder_1/loads.dss
+Redirect feeder_1/capacitor.dss
+
+// feeder 2 files
+Redirect feeder_2/breaker.dss
+Redirect feeder_2/recloser.dss
+Redirect feeder_2/fuse.dss
+Redirect feeder_2/normallyclosedswitches.dss
+Redirect feeder_2/normallyopenswitches.dss
+Redirect feeder_2/lines.dss
+Redirect feeder_2/transformers.dss
+Redirect feeder_2/loads.dss
+Redirect feeder_2/capacitor.dss
+Redirect feeder_2/btm_pv.dss
+
+// feeder 3 files
+Redirect feeder_3/breaker.dss
+Redirect feeder_3/recloser.dss
+Redirect feeder_3/fuse.dss
+Redirect feeder_3/normallyclosedswitches.dss
+Redirect feeder_3/normallyopenswitches.dss
+Redirect feeder_3/lines.dss
+Redirect feeder_3/transformers.dss
+Redirect feeder_3/loads.dss
+Redirect feeder_3/capacitor.dss
+Redirect feeder_3/btm_pv.dss
+
+Redirect tieswitch.dss
+
+// define simulation parameters
+Set DefaultBaseFreq=60
+Set Earthmodel=Carson
+Set VoltageBases=[138, 12.47, 0.480, 0.240, 0.208]
+Calcv
+
+// add energy meter at the substation head
+new energymeter.meter1 element=Line.source_connector 1
+
+// although protection devices are defined, they do not work well in power flow settings where all control actions are assumed to be instantaneous
+// disable protection control elements in power flow
+batchedit relay..* enabled=N
+batchedit recloser..* enabled=N
+batchedit fuse..* enabled=N
+
+// set control iterations and solve the system
+Set MaxControlIter=300
+Set MaxIter=300
+Solve
+
+// bus coordinates (bus, latitude, longitude); applied after Solve so they are not lost on bus re-processing
+LatLongCoords latlong.dss
+LatLongCoords feeder_1/latlong.dss
+LatLongCoords feeder_2/latlong.dss
+LatLongCoords feeder_3/latlong.dss
