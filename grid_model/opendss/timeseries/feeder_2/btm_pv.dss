@@ -1,13 +1,17 @@
 // feeder 2 PVs
 // generally only considering active power support as kVA ~ Pmpp
 New PVsystem.fdr2_6-2_PV phases=1 Bus1=fdr2_6_load2.1.2 kV=0.240 kVA=10 Pmpp=10
+~ yearly=pv_irradiance Tyearly=pv_temperature pf=1
 ~ irrad=1 temperature=25 P-TCurve=dss_PTCurve effcurve=dss_efficiency_vs_power
 
 New PVsystem.fdr2_8-1_PV phases=1 Bus1=fdr2_8-1_load.1.2 kV=0.240 kVA=8 Pmpp=8
+~ yearly=pv_irradiance Tyearly=pv_temperature pf=1
 ~ irrad=1 temperature=25 P-TCurve=dss_PTCurve effcurve=dss_efficiency_vs_power
 
 New PVsystem.fdr2_14-1_PV phases=1 Bus1=fdr2_14-1_load.1.2 kV=0.240 kVA=5 Pmpp=5
+~ yearly=pv_irradiance Tyearly=pv_temperature pf=1
 ~ irrad=1 temperature=25 P-TCurve=dss_PTCurve effcurve=dss_efficiency_vs_power
 
 New PVsystem.fdr2_21_PV phases=1 Bus1=fdr2_21_load.1.2 kV=0.240 kVA=5 Pmpp=5
+~ yearly=pv_irradiance Tyearly=pv_temperature pf=1
 ~ irrad=1 temperature=25 P-TCurve=dss_PTCurve effcurve=dss_efficiency_vs_power

@@ -26,6 +26,7 @@ Redirect normallyopenswitches.dss
 Redirect regulator.dss
 Redirect lines.dss
 Redirect transformers.dss
+Redirect loadshapes.dss
 Redirect loads.dss
 Redirect capacitor.dss
 
@@ -36,7 +37,6 @@ Set VoltageBases=[138, 12.47, 0.480, 0.240, 0.208]
 Calcv
 
 // bus coordinates (bus, latitude, longitude)
-LatLongCoords latlong.dss
 
 // add energy meter at the feeder head breaker
 new energymeter.meter1 element=Line.fdr1_feeder_head_breaker 1
@@ -50,3 +50,10 @@ batchedit fuse..* enabled=N
 // set control iterations
 Set MaxControlIter=300
 Set MaxIter=300
+
+Solve
+LatLongCoords latlong.dss
+
+Set mode=yearly stepsize=1h number=8760 hour=0 sec=0
+Set LoadMult=1
+Set controlmode=time

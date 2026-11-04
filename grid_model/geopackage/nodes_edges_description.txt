@@ -8,6 +8,6 @@ names, counts, load kW/kvar, PV ratings, capacitor kvar, and edge electrical dat
 Transformer multiwinding connections share the same asset identifier and equipment
 attributes if more than one distinct secondary bus exists; do not sum duplicated
 nameplate ratings across such branches. Connections are not additional wires.
-CRS EPSG:4326; fictitious feeder layout around the Golden geographic anchor.
+CRS EPSG:4326; fictitious feeder layout around the geographic anchor.
 Original OpenDSS files are unchanged. Source is the existing loadshape-package
 GIS export, including the added substation_power monitor.

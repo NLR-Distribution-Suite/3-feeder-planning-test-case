@@ -19,6 +19,7 @@ Redirect linegeometry.dss
 Redirect tcccurves.dss
 Redirect xfmrcode.dss
 Redirect xycurves.dss
+Redirect pv_loadshapes.dss
 Redirect substation.dss
 
 // feeder 1 files
@@ -30,6 +31,7 @@ Redirect feeder_1/normallyopenswitches.dss
 Redirect feeder_1/regulator.dss
 Redirect feeder_1/lines.dss
 Redirect feeder_1/transformers.dss
+Redirect feeder_1/loadshapes.dss
 Redirect feeder_1/loads.dss
 Redirect feeder_1/capacitor.dss
 
@@ -41,6 +43,7 @@ Redirect feeder_2/normallyclosedswitches.dss
 Redirect feeder_2/normallyopenswitches.dss
 Redirect feeder_2/lines.dss
 Redirect feeder_2/transformers.dss
+Redirect feeder_2/loadshapes.dss
 Redirect feeder_2/loads.dss
 Redirect feeder_2/capacitor.dss
 Redirect feeder_2/btm_pv.dss
@@ -53,6 +56,7 @@ Redirect feeder_3/normallyclosedswitches.dss
 Redirect feeder_3/normallyopenswitches.dss
 Redirect feeder_3/lines.dss
 Redirect feeder_3/transformers.dss
+Redirect feeder_3/loadshapes.dss
 Redirect feeder_3/loads.dss
 Redirect feeder_3/capacitor.dss
 Redirect feeder_3/btm_pv.dss
@@ -84,3 +88,9 @@ LatLongCoords latlong.dss
 LatLongCoords feeder_1/latlong.dss
 LatLongCoords feeder_2/latlong.dss
 LatLongCoords feeder_3/latlong.dss
+
+New Monitor.substation_power element=Line.source_connector terminal=1 mode=1 ppolar=no
+
+Set mode=yearly stepsize=1h number=8760 hour=0 sec=0
+Set LoadMult=1
+Set controlmode=time
