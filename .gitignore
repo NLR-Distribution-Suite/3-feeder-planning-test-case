@@ -221,3 +221,5 @@ __marimo__/
 *.dsv
 *.dbl
 *.txt
+# Local detailed profile metadata (compact descriptions are published)
+/profiles/metadata/

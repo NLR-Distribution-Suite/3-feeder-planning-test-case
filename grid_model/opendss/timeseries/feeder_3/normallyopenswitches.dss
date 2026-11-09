@@ -1,0 +1,4 @@
+/* ########################################### Tie switches ########################################################################*/
+! normally open switches
+New line.fdr3_4_sw_fdr3_11_sw bus1=fdr3_4_sw.1.2.3 bus2=fdr3_11_sw.1.2.3 linecode=switch length=1e-3 units=kft linetype=SWT_ switch=true Phases=3 
+New SwtControl.fdr3_4_sw_fdr3_11_sw_control SwitchedObj=Line.fdr3_4_sw_fdr3_11_sw SwitchedTerm=1 Normal=Open State=Open

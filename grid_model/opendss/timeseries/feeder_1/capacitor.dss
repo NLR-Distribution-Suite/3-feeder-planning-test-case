@@ -1,0 +1,5 @@
+
+// power factor correction capacitor at the feeder head
+New Capacitor.fdr1_feeder_head_cap_pf bus1=fdr1_11.1.2.3 phases=3 kV=12.47 kVAR=1200 numsteps=4 states=[0 0 0 0]
+New CapControl.fdr1_feeder_head_cap_pf_control element=Line.fdr1_feeder_head_breaker terminal=1 capacitor=fdr1_feeder_head_cap_pf
+~ type=PF onsetting=0.98 offsetting=-0.96

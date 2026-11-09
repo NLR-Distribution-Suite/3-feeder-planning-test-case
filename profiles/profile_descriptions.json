@@ -1,0 +1,937 @@
+{
+  "time_basis": {
+    "points": 8760,
+    "interval_hours": 1,
+    "calendar_year": 2018,
+    "timestamp_convention": "hour ending, MST UTC-07:00, no DST clock changes"
+  },
+  "loads": {
+    "fdr1_1_load": {
+      "feeder": 1,
+      "sector": "commercial",
+      "type": "PrimarySchool",
+      "source": "ComStock PrimarySchool",
+      "release": "2025/comstock_amy2018_release_3",
+      "base_kw": 280.0,
+      "profile": "loadshape/fdr1_1_load_pu.csv"
+    },
+    "fdr1_2_load": {
+      "feeder": 1,
+      "sector": "commercial",
+      "type": "MediumOffice",
+      "source": "ComStock MediumOffice",
+      "release": "2025/comstock_amy2018_release_3",
+      "base_kw": 220.0,
+      "profile": "loadshape/fdr1_2_load_pu.csv"
+    },
+    "fdr1_3_load": {
+      "feeder": 1,
+      "sector": "commercial",
+      "type": "SecondarySchool",
+      "source": "ComStock SecondarySchool",
+      "release": "2025/comstock_amy2018_release_3",
+      "base_kw": 180.0,
+      "profile": "loadshape/fdr1_3_load_pu.csv"
+    },
+    "fdr1_9_load": {
+      "feeder": 1,
+      "sector": "commercial",
+      "type": "SmallOffice",
+      "source": "ComStock SmallOffice",
+      "release": "2025/comstock_amy2018_release_3",
+      "base_kw": 80.0,
+      "profile": "loadshape/fdr1_9_load_pu.csv"
+    },
+    "fdr1_4-1_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 10.0,
+      "profile": "loadshape/fdr1_4-1_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr1_4-2_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 10.0,
+      "profile": "loadshape/fdr1_4-2_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr1_5_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 12.0,
+      "profile": "loadshape/fdr1_5_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr1_6_load1": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 15.0,
+      "profile": "loadshape/fdr1_6_load1_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr1_6_load2": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 12.0,
+      "profile": "loadshape/fdr1_6_load2_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr1_8-1_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 12.0,
+      "profile": "loadshape/fdr1_8-1_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr1_8-2_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 10.0,
+      "profile": "loadshape/fdr1_8-2_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr1_8-3_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 10.0,
+      "profile": "loadshape/fdr1_8-3_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr1_11-1_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 10.0,
+      "profile": "loadshape/fdr1_11-1_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr1_11-2_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 10.0,
+      "profile": "loadshape/fdr1_11-2_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr1_11-3_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 5.0,
+      "profile": "loadshape/fdr1_11-3_load_pu.csv",
+      "sampled_dwelling_count": 1
+    },
+    "fdr1_11-4_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 5.0,
+      "profile": "loadshape/fdr1_11-4_load_pu.csv",
+      "sampled_dwelling_count": 1
+    },
+    "fdr1_13_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 8.0,
+      "profile": "loadshape/fdr1_13_load_pu.csv",
+      "sampled_dwelling_count": 1
+    },
+    "fdr1_14-1_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 10.0,
+      "profile": "loadshape/fdr1_14-1_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr1_14-2_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 10.0,
+      "profile": "loadshape/fdr1_14-2_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr1_16_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 8.0,
+      "profile": "loadshape/fdr1_16_load_pu.csv",
+      "sampled_dwelling_count": 1
+    },
+    "fdr1_17_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 12.0,
+      "profile": "loadshape/fdr1_17_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr1_18_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 8.0,
+      "profile": "loadshape/fdr1_18_load_pu.csv",
+      "sampled_dwelling_count": 1
+    },
+    "fdr1_19_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 8.0,
+      "profile": "loadshape/fdr1_19_load_pu.csv",
+      "sampled_dwelling_count": 1
+    },
+    "fdr1_21_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 9.0,
+      "profile": "loadshape/fdr1_21_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr1_22_load": {
+      "feeder": 1,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 12.0,
+      "profile": "loadshape/fdr1_22_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr2_1_load": {
+      "feeder": 2,
+      "sector": "commercial",
+      "type": "PrimarySchool",
+      "source": "ComStock PrimarySchool",
+      "release": "2025/comstock_amy2018_release_3",
+      "base_kw": 180.0,
+      "profile": "loadshape/fdr2_1_load_pu.csv"
+    },
+    "fdr2_2_load": {
+      "feeder": 2,
+      "sector": "commercial",
+      "type": "Warehouse",
+      "source": "ComStock Warehouse",
+      "release": "2025/comstock_amy2018_release_3",
+      "base_kw": 85.0,
+      "profile": "loadshape/fdr2_2_load_pu.csv"
+    },
+    "fdr2_3_load": {
+      "feeder": 2,
+      "sector": "commercial",
+      "type": "SmallHotel",
+      "source": "ComStock SmallHotel",
+      "release": "2025/comstock_amy2018_release_3",
+      "base_kw": 80.0,
+      "profile": "loadshape/fdr2_3_load_pu.csv"
+    },
+    "fdr2_9_load": {
+      "feeder": 2,
+      "sector": "commercial",
+      "type": "RetailStripmall",
+      "source": "ComStock RetailStripmall",
+      "release": "2025/comstock_amy2018_release_3",
+      "base_kw": 80.0,
+      "profile": "loadshape/fdr2_9_load_pu.csv"
+    },
+    "fdr2_14-3_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Multifamily apartments",
+      "source": "ResStock Multi-Family with 5+ Units",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 90.0,
+      "profile": "loadshape/fdr2_14-3_load_pu.csv",
+      "sampled_dwelling_count": 15
+    },
+    "fdr2_23_load": {
+      "feeder": 2,
+      "sector": "commercial",
+      "type": "Supermarket with EV charging",
+      "source": "ComStock Grocery plus synthetic public EV charging",
+      "release": "2025/comstock_amy2018_release_3",
+      "base_kw": 270.0,
+      "profile": "loadshape/fdr2_23_load_pu.csv"
+    },
+    "fdr2_4-1_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 15.0,
+      "profile": "loadshape/fdr2_4-1_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr2_4-2_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 10.0,
+      "profile": "loadshape/fdr2_4-2_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr2_5_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 15.0,
+      "profile": "loadshape/fdr2_5_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr2_6_load1": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 18.0,
+      "profile": "loadshape/fdr2_6_load1_pu.csv",
+      "sampled_dwelling_count": 3
+    },
+    "fdr2_6_load2": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 18.0,
+      "profile": "loadshape/fdr2_6_load2_pu.csv",
+      "sampled_dwelling_count": 3
+    },
+    "fdr2_8-1_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 23.0,
+      "profile": "loadshape/fdr2_8-1_load_pu.csv",
+      "sampled_dwelling_count": 4
+    },
+    "fdr2_8-2_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 20.0,
+      "profile": "loadshape/fdr2_8-2_load_pu.csv",
+      "sampled_dwelling_count": 3
+    },
+    "fdr2_8-3_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 18.0,
+      "profile": "loadshape/fdr2_8-3_load_pu.csv",
+      "sampled_dwelling_count": 3
+    },
+    "fdr2_11-1_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 12.0,
+      "profile": "loadshape/fdr2_11-1_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr2_11-2_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 12.0,
+      "profile": "loadshape/fdr2_11-2_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr2_11-3_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 8.0,
+      "profile": "loadshape/fdr2_11-3_load_pu.csv",
+      "sampled_dwelling_count": 1
+    },
+    "fdr2_11-4_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 10.0,
+      "profile": "loadshape/fdr2_11-4_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr2_13_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 8.0,
+      "profile": "loadshape/fdr2_13_load_pu.csv",
+      "sampled_dwelling_count": 1
+    },
+    "fdr2_14-1_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 6.0,
+      "profile": "loadshape/fdr2_14-1_load_pu.csv",
+      "sampled_dwelling_count": 1
+    },
+    "fdr2_14-2_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 9.0,
+      "profile": "loadshape/fdr2_14-2_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr2_16_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 18.0,
+      "profile": "loadshape/fdr2_16_load_pu.csv",
+      "sampled_dwelling_count": 3
+    },
+    "fdr2_17_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 12.0,
+      "profile": "loadshape/fdr2_17_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr2_18_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 10.0,
+      "profile": "loadshape/fdr2_18_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr2_19_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 8.0,
+      "profile": "loadshape/fdr2_19_load_pu.csv",
+      "sampled_dwelling_count": 1
+    },
+    "fdr2_21_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 9.0,
+      "profile": "loadshape/fdr2_21_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr2_22_load": {
+      "feeder": 2,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 12.0,
+      "profile": "loadshape/fdr2_22_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr3_1_load": {
+      "feeder": 3,
+      "sector": "commercial",
+      "type": "PrimarySchool",
+      "source": "ComStock PrimarySchool",
+      "release": "2025/comstock_amy2018_release_3",
+      "base_kw": 230.0,
+      "profile": "loadshape/fdr3_1_load_pu.csv"
+    },
+    "fdr3_2_load": {
+      "feeder": 3,
+      "sector": "commercial",
+      "type": "RetailStripmall",
+      "source": "ComStock RetailStripmall",
+      "release": "2025/comstock_amy2018_release_3",
+      "base_kw": 84.0,
+      "profile": "loadshape/fdr3_2_load_pu.csv"
+    },
+    "fdr3_3_load": {
+      "feeder": 3,
+      "sector": "commercial",
+      "type": "MediumOffice",
+      "source": "ComStock MediumOffice",
+      "release": "2025/comstock_amy2018_release_3",
+      "base_kw": 93.0,
+      "profile": "loadshape/fdr3_3_load_pu.csv"
+    },
+    "fdr3_23_load": {
+      "feeder": 3,
+      "sector": "commercial",
+      "type": "Seasonal agricultural processing",
+      "source": "ComStock Warehouse background plus synthetic September-November processing",
+      "release": "2025/comstock_amy2018_release_3",
+      "base_kw": 220.0,
+      "profile": "loadshape/fdr3_23_load_pu.csv"
+    },
+    "fdr3_4-1_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 18.0,
+      "profile": "loadshape/fdr3_4-1_load_pu.csv",
+      "sampled_dwelling_count": 3
+    },
+    "fdr3_4-2_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 12.0,
+      "profile": "loadshape/fdr3_4-2_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr3_5_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 15.0,
+      "profile": "loadshape/fdr3_5_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr3_6_load1": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 18.0,
+      "profile": "loadshape/fdr3_6_load1_pu.csv",
+      "sampled_dwelling_count": 3
+    },
+    "fdr3_6_load2": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 22.0,
+      "profile": "loadshape/fdr3_6_load2_pu.csv",
+      "sampled_dwelling_count": 4
+    },
+    "fdr3_8-1_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 23.0,
+      "profile": "loadshape/fdr3_8-1_load_pu.csv",
+      "sampled_dwelling_count": 4
+    },
+    "fdr3_8-2_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 20.0,
+      "profile": "loadshape/fdr3_8-2_load_pu.csv",
+      "sampled_dwelling_count": 3
+    },
+    "fdr3_8-3_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 18.0,
+      "profile": "loadshape/fdr3_8-3_load_pu.csv",
+      "sampled_dwelling_count": 3
+    },
+    "fdr3_11-1_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 12.0,
+      "profile": "loadshape/fdr3_11-1_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr3_11-2_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 12.0,
+      "profile": "loadshape/fdr3_11-2_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr3_11-3_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 8.0,
+      "profile": "loadshape/fdr3_11-3_load_pu.csv",
+      "sampled_dwelling_count": 1
+    },
+    "fdr3_11-4_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 10.0,
+      "profile": "loadshape/fdr3_11-4_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr3_13_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 8.0,
+      "profile": "loadshape/fdr3_13_load_pu.csv",
+      "sampled_dwelling_count": 1
+    },
+    "fdr3_14-1_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 10.0,
+      "profile": "loadshape/fdr3_14-1_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr3_14-2_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 10.0,
+      "profile": "loadshape/fdr3_14-2_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr3_16_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 20.0,
+      "profile": "loadshape/fdr3_16_load_pu.csv",
+      "sampled_dwelling_count": 3
+    },
+    "fdr3_17_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 12.0,
+      "profile": "loadshape/fdr3_17_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr3_18_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 10.0,
+      "profile": "loadshape/fdr3_18_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr3_19_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 8.0,
+      "profile": "loadshape/fdr3_19_load_pu.csv",
+      "sampled_dwelling_count": 1
+    },
+    "fdr3_21_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 9.0,
+      "profile": "loadshape/fdr3_21_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr3_22_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 12.0,
+      "profile": "loadshape/fdr3_22_load_pu.csv",
+      "sampled_dwelling_count": 2
+    },
+    "fdr3_9-1_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 25.0,
+      "profile": "loadshape/fdr3_9-1_load_pu.csv",
+      "sampled_dwelling_count": 4
+    },
+    "fdr3_9-2_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 20.0,
+      "profile": "loadshape/fdr3_9-2_load_pu.csv",
+      "sampled_dwelling_count": 3
+    },
+    "fdr3_9-3_load": {
+      "feeder": 3,
+      "sector": "residential",
+      "type": "Single-Family Detached",
+      "source": "ResStock Single-Family Detached",
+      "release": "2025/resstock_amy2018_release_1",
+      "base_kw": 23.0,
+      "profile": "loadshape/fdr3_9-3_load_pu.csv",
+      "sampled_dwelling_count": 4
+    }
+  },
+  "pv": {
+    "source": "PVWatts V8 hourly plane-of-array irradiance (poa)",
+    "weather": "NSRDB typical meteorological year",
+    "profile": "pv/irradiance_kw_m2.csv",
+    "units": "kW/m2",
+    "conversion": "PVWatts POA W/m2 divided by 1000",
+    "opendss_shape": "pv_irradiance",
+    "base_irradiance_kw_m2": 1,
+    "peak_normalized": false,
+    "may_exceed_one": true,
+    "assumptions": {
+      "module_type": "standard",
+      "mounting": "fixed rooftop",
+      "tilt_degrees": 30,
+      "azimuth_degrees": 180
+    },
+    "note": "Shared by all PV systems. Native OpenDSS computes AC output using existing temperature-power and inverter-efficiency curves; this is not an AC power multiplier.",
+    "systems": {
+      "fdr2_6-2_PV": {
+        "feeder": 2,
+        "bus": "fdr2_6_load2.1.2",
+        "rated_dc_kw": 10.0,
+        "inverter_kva": 10.0,
+        "dc_ac_ratio": 1.0,
+        "power_factor": 1,
+        "irradiance_profile": "pv/irradiance_kw_m2.csv",
+        "temperature_profile": "temperature/cell_temperature_c.csv"
+      },
+      "fdr2_8-1_PV": {
+        "feeder": 2,
+        "bus": "fdr2_8-1_load.1.2",
+        "rated_dc_kw": 8.0,
+        "inverter_kva": 8.0,
+        "dc_ac_ratio": 1.0,
+        "power_factor": 1,
+        "irradiance_profile": "pv/irradiance_kw_m2.csv",
+        "temperature_profile": "temperature/cell_temperature_c.csv"
+      },
+      "fdr2_14-1_PV": {
+        "feeder": 2,
+        "bus": "fdr2_14-1_load.1.2",
+        "rated_dc_kw": 5.0,
+        "inverter_kva": 5.0,
+        "dc_ac_ratio": 1.0,
+        "power_factor": 1,
+        "irradiance_profile": "pv/irradiance_kw_m2.csv",
+        "temperature_profile": "temperature/cell_temperature_c.csv"
+      },
+      "fdr2_21_PV": {
+        "feeder": 2,
+        "bus": "fdr2_21_load.1.2",
+        "rated_dc_kw": 5.0,
+        "inverter_kva": 5.0,
+        "dc_ac_ratio": 1.0,
+        "power_factor": 1,
+        "irradiance_profile": "pv/irradiance_kw_m2.csv",
+        "temperature_profile": "temperature/cell_temperature_c.csv"
+      },
+      "fdr3_6-1_PV": {
+        "feeder": 3,
+        "bus": "fdr3_6_load1.1.2",
+        "rated_dc_kw": 10.0,
+        "inverter_kva": 10.0,
+        "dc_ac_ratio": 1.0,
+        "power_factor": 1,
+        "irradiance_profile": "pv/irradiance_kw_m2.csv",
+        "temperature_profile": "temperature/cell_temperature_c.csv"
+      },
+      "fdr3_8-1_PV": {
+        "feeder": 3,
+        "bus": "fdr3_8-1_load.1.2",
+        "rated_dc_kw": 10.0,
+        "inverter_kva": 10.0,
+        "dc_ac_ratio": 1.0,
+        "power_factor": 1,
+        "irradiance_profile": "pv/irradiance_kw_m2.csv",
+        "temperature_profile": "temperature/cell_temperature_c.csv"
+      },
+      "fdr3_8-2_PV": {
+        "feeder": 3,
+        "bus": "fdr3_8-2_load.1.2",
+        "rated_dc_kw": 10.0,
+        "inverter_kva": 10.0,
+        "dc_ac_ratio": 1.0,
+        "power_factor": 1,
+        "irradiance_profile": "pv/irradiance_kw_m2.csv",
+        "temperature_profile": "temperature/cell_temperature_c.csv"
+      },
+      "fdr3_11-4_PV": {
+        "feeder": 3,
+        "bus": "fdr3_11-4_load.1.2",
+        "rated_dc_kw": 5.0,
+        "inverter_kva": 5.0,
+        "dc_ac_ratio": 1.0,
+        "power_factor": 1,
+        "irradiance_profile": "pv/irradiance_kw_m2.csv",
+        "temperature_profile": "temperature/cell_temperature_c.csv"
+      },
+      "fdr3_13_PV": {
+        "feeder": 3,
+        "bus": "fdr3_13_load.1.2",
+        "rated_dc_kw": 5.0,
+        "inverter_kva": 5.0,
+        "dc_ac_ratio": 1.0,
+        "power_factor": 1,
+        "irradiance_profile": "pv/irradiance_kw_m2.csv",
+        "temperature_profile": "temperature/cell_temperature_c.csv"
+      },
+      "fdr3_14-2_PV": {
+        "feeder": 3,
+        "bus": "fdr3_14-2_load.1.2",
+        "rated_dc_kw": 5.0,
+        "inverter_kva": 5.0,
+        "dc_ac_ratio": 1.0,
+        "power_factor": 1,
+        "irradiance_profile": "pv/irradiance_kw_m2.csv",
+        "temperature_profile": "temperature/cell_temperature_c.csv"
+      },
+      "fdr3_22_PV": {
+        "feeder": 3,
+        "bus": "fdr3_22_load.1.2",
+        "rated_dc_kw": 5.0,
+        "inverter_kva": 5.0,
+        "dc_ac_ratio": 1.0,
+        "power_factor": 1,
+        "irradiance_profile": "pv/irradiance_kw_m2.csv",
+        "temperature_profile": "temperature/cell_temperature_c.csv"
+      }
+    }
+  },
+  "temperature": {
+    "source": "PVWatts V8 hourly cell temperature (tcell)",
+    "weather": "Same typical-year weather as the irradiance profile",
+    "profile": "temperature/cell_temperature_c.csv",
+    "units": "degrees Celsius",
+    "opendss_shape": "pv_temperature",
+    "normalized": false,
+    "note": "Actual cell temperatures, not ambient temperature or per-unit values. Used through PVSystem Tyearly with the existing P-TCurve."
+  },
+  "weather_alignment_note": "Typical-year PV weather is calendar-mapped to 2018 and is not weather-coincident with AMY2018 load weather."
+}

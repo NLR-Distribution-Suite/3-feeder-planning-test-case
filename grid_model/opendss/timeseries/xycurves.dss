@@ -1,0 +1,6 @@
+// Reference: https://opendss.epri.com/Examples6.html
+// rated Pmpp vs Temperature curve for PV Systems
+New XYCurve.dss_PTCurve npts=4 xarray=[0 25 75 100] yarray=[1.2 1.0 0.8 0.6] 
+
+// efficiency curve is per unit eff vs per unit power
+New XYCurve.dss_efficiency_vs_power npts=4 xarray=[.1 .2 .4 1.0] yarray=[0.86 0.9 0.93 0.97]

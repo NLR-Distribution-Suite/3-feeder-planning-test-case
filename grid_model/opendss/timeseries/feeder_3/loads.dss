@@ -1,0 +1,63 @@
+/* ########################################### FEEDER 3 ######################################################################## */
+! three-phase loads
+New Load.fdr3_1_load    Bus1=fdr3_1_load.1.2.3     phases=3 kv=0.48   kW=230  pf=0.9 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_1_load status=variable
+New Load.fdr3_2_load    Bus1=fdr3_2_load.1.2.3     phases=3 kv=0.48   kW=84   pf=0.9 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_2_load status=variable
+New Load.fdr3_3_load    Bus1=fdr3_3_load.1.2.3     phases=3 kv=0.48   kW=93   pf=0.9 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_3_load status=variable
+New Load.fdr3_23_load   Bus1=fdr3_23_load.1.2.3    phases=3 kv=0.48   kW=220  pf=0.9 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_23_load status=variable
+
+
+! single-phase loads
+New Load.fdr3_4-1_load    Bus1=fdr3_4-1_load.1.2    phases=1 kv=0.240  kW=18   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_4-1_load status=variable
+New Load.fdr3_4-2_load    Bus1=fdr3_4-2_load.1.2    phases=1 kv=0.240  kW=12   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_4-2_load status=variable
+New Load.fdr3_5_load      Bus1=fdr3_5_load.1.2      phases=1 kv=0.240  kW=15   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_5_load status=variable
+New Load.fdr3_6_load1     Bus1=fdr3_6_load1.1.2     phases=1 kv=0.240  kW=18   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_6_load1 status=variable
+New Load.fdr3_6_load2     Bus1=fdr3_6_load2.1.2     phases=1 kv=0.240  kW=22   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_6_load2 status=variable
+New Load.fdr3_8-1_load    Bus1=fdr3_8-1_load.1.2    phases=1 kv=0.240  kW=23   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_8-1_load status=variable
+New Load.fdr3_8-2_load    Bus1=fdr3_8-2_load.1.2    phases=1 kv=0.240  kW=20   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_8-2_load status=variable
+New Load.fdr3_8-3_load    Bus1=fdr3_8-3_load.1.2    phases=1 kv=0.240  kW=18   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_8-3_load status=variable
+New Load.fdr3_11-1_load   Bus1=fdr3_11-1_load.1.2   phases=1 kv=0.240  kW=12   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_11-1_load status=variable
+New Load.fdr3_11-2_load   Bus1=fdr3_11-2_load.1.2   phases=1 kv=0.240  kW=12   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_11-2_load status=variable
+New Load.fdr3_11-3_load   Bus1=fdr3_11-3_load.1.2   phases=1 kv=0.240  kW=8    pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_11-3_load status=variable
+New Load.fdr3_11-4_load   Bus1=fdr3_11-4_load.1.2   phases=1 kv=0.240  kW=10   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_11-4_load status=variable
+New Load.fdr3_13_load     Bus1=fdr3_13_load.1.2     phases=1 kv=0.240  kW=8    pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_13_load status=variable
+New Load.fdr3_14-1_load   Bus1=fdr3_14-1_load.1.2   phases=1 kv=0.240  kW=10   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_14-1_load status=variable
+New Load.fdr3_14-2_load   Bus1=fdr3_14-2_load.1.2   phases=1 kv=0.240  kW=10   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_14-2_load status=variable
+New Load.fdr3_16_load     Bus1=fdr3_16_load.1.2     phases=1 kv=0.240  kW=20   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_16_load status=variable
+New Load.fdr3_17_load     Bus1=fdr3_17_load.1.2     phases=1 kv=0.240  kW=12   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_17_load status=variable
+New Load.fdr3_18_load     Bus1=fdr3_18_load.1.2     phases=1 kv=0.240  kW=10   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_18_load status=variable
+New Load.fdr3_19_load     Bus1=fdr3_19_load.1.2     phases=1 kv=0.240  kW=8    pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_19_load status=variable
+New Load.fdr3_21_load     Bus1=fdr3_21_load.1.2     phases=1 kv=0.240  kW=9    pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_21_load status=variable
+New Load.fdr3_22_load     Bus1=fdr3_22_load.1.2     phases=1 kv=0.240  kW=12   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_22_load status=variable
+
+! three single-phase loads at the secondary of 3x1-ph transformer
+New Load.fdr3_9-1_load  Bus1=fdr3_9-1_load.1.2   phases=1 kv=0.240  kW=25   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_9-1_load status=variable
+New Load.fdr3_9-2_load  Bus1=fdr3_9-2_load.1.2   phases=1 kv=0.240  kW=20   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_9-2_load status=variable
+New Load.fdr3_9-3_load  Bus1=fdr3_9-3_load.1.2   phases=1 kv=0.240  kW=23   pf=0.95 Vminpu=0.8 Vmaxpu=1.2 conn=wye
+~ yearly=ls_fdr3_9-3_load status=variable

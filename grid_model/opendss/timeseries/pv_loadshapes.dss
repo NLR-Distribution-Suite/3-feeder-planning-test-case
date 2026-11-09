@@ -1,0 +1,2 @@
+New LoadShape.pv_irradiance npts=8760 interval=1 mult=(file=../../../profiles/pv/irradiance_kw_m2.csv) useactual=no
+New TShape.pv_temperature npts=8760 interval=1 temp=(file=../../../profiles/temperature/cell_temperature_c.csv)
