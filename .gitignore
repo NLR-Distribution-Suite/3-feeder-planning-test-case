@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+# ap
+.codegraph
+.claude/
+_local/
+
 # Distribution / packaging
 .Python
 build/
