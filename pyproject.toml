@@ -11,9 +11,10 @@ authors = [
 ]
 dependencies = [
     "altdss[all]>=0.2.4",
-    "bokeh>=3.10.0",
     "grid-data-models>=2.3.7",
     "nrel-ditto>=0.1.5",
+    "polars>=1.0",
+    "matplotlib>=3.8",
 ]
 
 [project.urls]
