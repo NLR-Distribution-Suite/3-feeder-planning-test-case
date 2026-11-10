@@ -18,10 +18,9 @@ new line.fdr1_21-fdr1_22                bus1=fdr1_21.1.2.3      bus2=fdr1_22.1.2
 // 3-phase secondary lines
 // tr1, tr2, tr3, tr21
 new line.fdr1_1_sec-fdr1_1_load         bus1=fdr1_1_sec.1.2.3      bus2=fdr1_1_load.1.2.3        geometry=OH_quadruplex_4/0            length=0.02 units=km 
-new line.fdr1_2_sec-fdr1_2_load         bus1=fdr1_2_sec.1.2.3      bus2=fdr1_2_load.1.2.3        geometry=OH_quadruplex_4_ACSR         length=0.02 units=km 
-new line.fdr1_3_sec-fdr1_3_load         bus1=fdr1_3_sec.1.2.3      bus2=fdr1_3_load.1.2.3        geometry=OH_quadruplex_4_ACSR         length=0.02 units=km 
+new line.fdr1_2_sec-fdr1_2_load         bus1=fdr1_2_sec.1.2.3      bus2=fdr1_2_load.1.2.3        geometry=OH_quadruplex_4/0        length=0.02 units=km 
+new line.fdr1_3_sec-fdr1_3_load         bus1=fdr1_3_sec.1.2.3      bus2=fdr1_3_load.1.2.3        geometry=OH_quadruplex_4/0         length=0.02 units=km 
 new line.fdr1_9_sec-fdr1_9_load         bus1=fdr1_9_sec.1.2.3      bus2=fdr1_9_load.1.2.3        geometry=OH_quadruplex_4_ACSR         length=0.03 units=km
-new line.fdr1_23_sec-fdr1_23_load       bus1=fdr1_23_sec.1.2.3     bus2=fdr1_23_load.1.2.3       geometry=OH_quadruplex_4/0            length=0.02 units=km 
 
 // lines with a tie-switch connection
 // within feeder 1
